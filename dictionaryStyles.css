@@ -1,0 +1,71 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+div {
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: coral;
+    border-style: inset;
+
+    margin-top: 10px;
+
+    padding: 5px;
+
+    background-image: linear-gradient(to bottom, rgb(243, 172, 146), rgb(255, 159, 142))
+}
+
+body {
+    background-color: coral;
+}
+
+#mainstuff {
+    background-color: rgb(243, 172, 146);
+    
+    width: 50%;
+    margin: auto;
+    padding: 2.5%;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+
+    text-align: center;
+
+    border-radius: 50px;
+    border-width: 5px;
+    border-color: coral;
+    border-style: inset;
+}
+
+#ptlogo {
+    height: 75%;
+    width: 75%;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 45px;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+
+    background-color: rgb(97, 136, 32);
+
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgb(73, 103, 25);
+    border-style: inset;
+
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(89, 124, 33);
+    cursor: pointer;
+}
