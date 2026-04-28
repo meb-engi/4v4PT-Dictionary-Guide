@@ -1,3 +1,15 @@
+:root {
+    --bg: rgb(198, 240, 144);
+    --hdr: rgb(241, 231, 138);
+    --text: rgb(37, 35, 34);
+    --divbg: linear-gradient(to bottom, rgb(138, 247, 111), rgb(197, 233, 97));
+}  
+.darkmode{
+    --bg: rgb(37, 35, 34);
+    --hdr: rgb(37, 35, 34);
+    --text: rgb(219, 209, 204);
+    
+}
 * {
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
@@ -21,11 +33,11 @@ div {
 
     padding: 5px;
 
-    background-image: linear-gradient(to bottom, rgb(138, 247, 111), rgb(197, 233, 97))
+    background-image: var(--divbg);
 }
 
 body {
-    background-color: rgb(37, 35, 34);
+    background-color: var(--bg);
 }
 
 #mainstuff {
@@ -35,11 +47,11 @@ body {
 }
 
 header {
-    background-color: rgb(37, 35, 34);
+    background-color: var(--hdr);
 
     text-align: center;
 
-    color: white;
+    color: var(--text);
 
     border-radius: 50px;
     border-width: 5px;
@@ -113,4 +125,26 @@ video {
     width: 400px;
 
     border-radius: 10px;
+}
+#theme-switch {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+#theme-switch img:last-child {
+    display: none;
+}
+.darkmode #theme-switch img:first-child {
+    display: none;
+}
+.darkmode #theme-switch img:last-child {
+    display: block;
 }
