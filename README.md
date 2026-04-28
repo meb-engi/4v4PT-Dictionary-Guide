@@ -9,4 +9,6 @@ poggersww has provided help with the coding so shoutout aint no way bruh
 
 also shoutout too spoofy, evilyn, fiff, bestefar, _yee, and other players for providing input on the dictionary and guide
 
-my dc is   meb.engi   if you wanna contact me
+if u wanna contact us our dc is -
+meb.engi
+poggersww
