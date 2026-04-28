@@ -7,7 +7,7 @@ but i lowk wanted it to be more accessable so i """'ported""" it to a website
 im really the only one actively managing this rn
 poggersww has provided help with the coding so shoutout aint no way bruh
 
-also shoutout too spoofy, evilyn, fiff, bestefar, _yee, and other players for providing input on the dictionary and guide
+also shoutout too spoofy, evilyn, fiff, bestefar, _yee, IGMB and other players for providing input on the dictionary and guide
 
 if u wanna contact us our dc is -
 meb.engi
