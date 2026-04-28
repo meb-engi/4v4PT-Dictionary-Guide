@@ -1,4 +1,4 @@
-hi its me engi (the real dictionary is at https://meb-engi.github.io/4v4PASSTimeDictionary-Asia/dictionary.html)
+hi its me engi (the real dictionary is at [https://meb-engi.github.io/4v4PASSTimeDictionary-Asia/dictionary.html](https://meb-engi.github.io/4v4PT-Dictionary-Guide/dictionary.html))
 
 this is a small lil project i have been cooking up for a while
 this used to be a google doc but it was tucked away in a guide in a channel in a server that isnt even the APTA server (no hate on grassroots)
