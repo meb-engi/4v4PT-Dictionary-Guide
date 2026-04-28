@@ -1,6 +1,25 @@
+:root {
+    --bg: rgb(198, 240, 144);
+    --hdr: rgb(241, 231, 138);
+    --hdrbc: rgb(18, 131, 46);
+    --divbg: linear-gradient(to bottom, rgb(138, 247, 111), rgb(197, 233, 97));
+    --divbc: rgb(18, 131, 46);
+
+    --text: rgb(0, 0, 0);
+}  
+.darkmode{
+    --bg: rgb(37, 35, 34);
+    --hdr: rgb(37, 35, 34);
+    --hdrbc: rgb(219, 209, 204);
+    --divbg: linear-gradient(to bottom, rgb(63, 60, 60), rgb(73, 70, 70));
+    --divbc: rgb(121, 119, 117);
+
+    --text: white;
+}
 * {
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
+    color: var(--text)
 }
 
 h1 {
@@ -14,40 +33,41 @@ h2 {
 div {
     border-radius: 10px;
     border-width: 5px;
-    border-color: rgb(18, 131, 46);
+    border-color: var(--divbc);
     border-style: inset;
 
     margin-top: 10px;
 
     padding: 5px;
 
-    background-image: linear-gradient(to bottom, rgb(138, 247, 111), rgb(197, 233, 97))
+    background-image: var(--divbg);
 }
 
 body {
-    background-color: rgb(37, 35, 34);
+    background-color: var(--bg);
 }
 
 #mainstuff {
     width: 50%;
     margin: auto;
     padding: 2.5%;
+    border-radius: 25px;
 }
 
 header {
-    background-color: rgb(37, 35, 34);
+    background-color: var(--hdr);
 
     text-align: center;
 
-    color: white;
+    color: var(--hdrtext);
 
     border-radius: 50px;
     border-width: 5px;
-    border-color: rgb(18, 131, 46);
+    border-color: var(--hdrbc);
     border-style: inset;
 }
 
-#ptlogo {
+.ptlogo {
     height: 30%;
     width: 30%;
 }
@@ -104,9 +124,28 @@ button:hover {
     margin-top: 10px;
 }
 
-video {
-    height: auto;
-    width: 400px;
+#theme-switch {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
 
-    border-radius: 10px;
+#theme-switch img:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:last-child {
+    display: block;
 }

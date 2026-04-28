@@ -9,89 +9,89 @@
     <script type="text/javascript" src="darkmode.js" defer></script>
 </head>
 <body>
-    <div id="mainstuff" style="border-radius: 25px;">
+    <div id="mainstuff">
         <header>
             <button id="theme-switch" style="background-color: rgb(37, 35, 34);">
                 <img src="images/dark_mode.svg" id="darkicon">
                 <img src="images/light_mode.svg" id="lighticon">
             </button>
-            <img src="images/APTA_LOGO.png" id="ptlogo">
-            <img src="images/OCE_LOGO.png" id="ptlogo">
+            <img src="images/APTA_LOGO.png" class="ptlogo" id="apta">
+            <img src="images/OCE_LOGO.png" class="ptlogo">
             <h1>4v4 PASS Time Dictionary (ASIA + OCE)</h1>
-            <h2>Ver 4.1.0 4/27/26</h2>
+            <h2>Ver 4.1.1 4/27/26</h2>
         </header>
         <a href="guide.html" id="theButton"><button>4v4 PASS Time Guide (ASIA + OCE)</button></a>
         <div id="legend" class="liststuff" style="margin-top: 45px;">
             <h3>LEGEND</h3>
             <ul>
-                <li class="solly">Soldier Specific (Solly)</li>
-                <li class="demo">Demoman Specific (Demo)</li>
-                <li class="med">Medic Specific (Med)</li>
-                <li class="xplosive">Explosive Exclusive (Solly & Demo)</li>
-                <li class="multi">Multi Class (more than 1 class)</li>
+                <li style="background-color: var(--solly);">Soldier Specific (Solly)</li>
+                <li style="background-color: var(--demo);">Demoman Specific (Demo)</li>
+                <li style="background-color: var(--med);">Medic Specific (Med)</li>
+                <li style="background-color: var(--xplosive);">Explosive Exclusive (Solly & Demo)</li>
+                <li style="background-color: var(--multi);">Multi Class (more than 1 class)</li>
             </ul>
         </div>
         <div id="loadouts" class="liststuff"> <!--f-->
             <h3>POPULAR LOADOUTS & PLAYSTYLES</h3>
             <ul>
                 <li>
-                    <h3 class="solly">Gunboats (Roamer)</h3>
+                    <h3 style="background-color: var(--solly);">Gunboats (Roamer)</h3>
                     <p class="Impinfo">STOCK/ORIGINAL + GUNBOATS + ANY WHITELISTED MELEE</p>
                     <br>Airsot. You're expected to play this loadout
                 </li>
                 <li>
-                    <h3 class="solly">Manntread loadouts (Soldier)</h3>
+                    <h3 style="background-color: var(--solly);">Manntread loadouts (Soldier)</h3>
                     <br>either ur just really bad at strafing or kafri
                     <ul>
                         <li>
-                            <h3 class="solly">Mannbox</h3>
+                            <h3 style="background-color: var(--solly);">Mannbox</h3>
                             <p class="Impinfo">BLACKBOX + MANNTREADS + ANY WHITELISTED MELEE</p>
                         </li>
                         <li>
-                            <h3 class="solly">Origimann</h3>
+                            <h3 style="background-color: var(--solly);">Origimann</h3>
                             <p class="Impinfo">ORIGINAL + MANNTREADS + ANY WHITELISTED MELEE</p>
                         </li>
                         <li>
-                            <h3 class="solly">Stocktreads</h3>
+                            <h3 style="background-color: var(--solly);">Stocktreads</h3>
                             <p class="Impinfo">STOCK + MANNTREADS + ANY WHITELISTED MELEE</p>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <h3 class="demo">Stoic (CaberKnight)</h3>
+                    <h3 style="background-color: var(--demo);">Stoic (CaberKnight)</h3>
                     <p class="Impinfo">BOOTIES/BOOTLEGGER + SPLENDIDSCREEN + CABER</p>
                     <br>I'm travelling at the speed of light, I wanna make a supersonic man outta you
                 </li>
                 <li>
-                    <h3 class="demo">Pipes (HybridKnight)</h3>
+                    <h3 style="background-color: var(--demo);">Pipes (HybridKnight)</h3>
                     <p class="Impinfo">STOCK/IRONBOMBER + SPLENDIDSCREEN + ANY WHITELISTED MELEE</p>
                     <br>Now where could my pipe be. garfield!
                 </li>
                 <li>
-                    <h3 class="demo">DemoKnight loadouts (Demoman)</h3>
+                    <h3 style="background-color: var(--demo);">DemoKnight loadouts (Demoman)</h3>
                     <br>when your team doesn't have any demo players XD
                     <ul>
                         <li>
-                            <h3 class="demo">Scallop</h3>
+                            <h3 style="background-color: var(--demo);">Scallop</h3>
                             <p class="Impinfo">BOOTIES/BOOTLEGGER + SPLENDIDSCREEN + STOCK/RESKINS</p>
                         </li>
                         <li>
-                            <h3 class="demo">Axe</h3>
+                            <h3 style="background-color: var(--demo);">Axe</h3>
                             <p class="Impinfo">BOOTIES/BOOTLEGGER + SPLENDIDSCREEN + SKULLCUTTER</p>
                         </li>
                         <li>
-                            <h3 class="demo">Sword</h3>
+                            <h3 style="background-color: var(--demo);">Sword</h3>
                             <p class="Impinfo">BOOTIES/BOOTLEGGER + SPLENDIDSCREEN + CLAIDHEAMH MOR</p>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <h3 class="med">Stock (Stock)</h3>
+                    <h3 style="background-color: var(--med);">Stock (Stock)</h3>
                     <p class="Impinfo">CROSSBOW + MEDIGUN + ANY WHITELISTED MELEE</p>
                     <br>Only seen when buffing teammates
                 </li>
                 <li>
-                    <h3 class="med">Larry (Barnacle/Chariot)</h3>
+                    <h3 style="background-color: var(--med);">Larry (Barnacle/Chariot)</h3>
                     <p class="Impinfo">CROSSBOW + QUICKFIX + ANY WHITELISTED MELEE</p>
                     <br>Medic Jugz. You're expected to play this loadout
                 </li>
@@ -103,12 +103,12 @@
             <br>Note: Some example videos require your cursor to hover over it to play. If they don't load, please refresh
             <ul>
                 <li>
-                    <h3 class="multi">Steal</h3>
+                    <h3 style="background-color: var(--multi);">Steal</h3>
                     Hitting an enemy that's holding the ball with your melee to steal it
                     <p class="info">"Stole ball from solly"</p>
                     <ul>
                         <li>
-                            <h3 class="multi">EasyE Steal</h3>
+                            <h3 style="background-color: var(--multi);">EasyE Steal</h3>
                             Throwing the ball at the ground for an enemy to pick up and for you to steal
                             <p class="info">"I got easye'd"</p>
                             <img src="images/termGifs/easye.gif" class="gif">
@@ -116,43 +116,43 @@
                     </ul>
                 </li>
                 <li>
-                    <h3 class="multi">Intercept</h3>
+                    <h3 style="background-color: var(--multi);">Intercept</h3>
                     Picking up the ball when it’s the enemy team’s color, usually stealing a pass 
                     or a handoff
                     <p class="info">"I intercepted the ball"</p>
                     <img src="images/termGifs/intercept.gif" class="gif">
                 </li>
                 <li>
-                    <h3 class="multi">Magnet</h3>
+                    <h3 style="background-color: var(--multi);">Magnet</h3>
                     Having the ball pulled towards you when you're close enough
                     <p class="info">"The magnet failed me :C"</p>
                     <img src="images/termGifs/magnet.gif" class="gif">
                 </li>
                 <li>
-                    <h3 class="multi">Splash</h3>
+                    <h3 style="background-color: var(--multi);">Splash</h3>
                     Hitting the ball with an explosive's blast radius to make make it neutral and/or 
                     to move the ball
                     <p class="info">"Splashed pass, ball's on their side"</p>
                     <img src="images/termGifs/splash.gif" class="gif">
                 </li>
                 <li>
-                    <h3 class="multi">Defend</h3>
+                    <h3 style="background-color: var(--multi);">Defend</h3>
                     Attempting to deny a score by blocking your goal or killing 
                     <p class="info">"GO BACK DEFEND !!!"</p>
                     <img src="images/termGifs/defense.gif" class="gif">
                     <ul>
                         <li>
-                            <h3 class="multi">Inside Defense (Anchor)</h3>
+                            <h3 style="background-color: var(--multi);">Inside Defense (Anchor)</h3>
                             Sticking by the goal to deny a score by intercepting or splashing the ball before it goes in
                             <p class="info">"Playing inside (defense)"</p>
                         </li>
                         <li>
-                            <h3 class="multi">Outside Defense (Chaser)</h3>
+                            <h3 style="background-color: var(--multi);">Outside Defense (Chaser)</h3>
                             Killing/Distracting enemies waiting for a pass when your team is on defense
                             <p class="info">"Im chasing"</p>
                             <ul>
                                 <li>
-                                    <h3 class="multi">Pickpocket/Floor Guy (Playing dribble)</h3>
+                                    <h3 style="background-color: var(--multi);">Pickpocket/Floor Guy (Playing dribble)</h3>
                                     Staying on the ground to intercept a dribble or to steal the ball
                                     <p class="info">"Im playing dribble"</p>
                                 </li>
@@ -161,63 +161,63 @@
                     </ul>
                 </li>
                 <LI>
-                    <h3 class="multi">Boost/Surf</h3>
+                    <h3 style="background-color: var(--multi);">Boost/Surf</h3>
                     Sending an enemy/being sent forward with an explosive's blast 
                     <p class="info">"Boosted solly upper left"</p>
                 </LI>
                 <li>
-                    <h3 class="multi">Catch</h3>
+                    <h3 style="background-color: var(--multi);">Catch</h3>
                     Picking up the ball when it's in the air or thrown on a ramp
                     <p class="info">"I caught ball on shelf"</p>
                 </li>
                 <li>
-                    <h3 class="multi">Geometry</h3>
+                    <h3 style="background-color: var(--multi);">Geometry</h3>
                     When the pass is interupted by a wall and stops following on to whoever it was locked on to
                     <p class="info">"Whoops, geometry"</p>
                 </li>
                 <li>
-                    <h3 class="multi">Jack Armor (Jarmor)</h3>
+                    <h3 style="background-color: var(--multi);">Jack Armor (Jarmor)</h3>
                     Getting the ball splashed back into your possession as soon as you throw it
                     <p class="info">"I got jarmor'd bruh"</p>
                 </li>
                 <li>
-                    <h3 class="multi">Goomba('d)</h3>
+                    <h3 style="background-color: var(--multi);">Goomba('d)</h3>
                     Bouncing on an enemy's head
                     <p class="info">"I goomba'd someone and scored"</p>
                 </li>
                 <li>
-                    <h3 class="multi">Mario('d)</h3>
+                    <h3 style="background-color: var(--multi);">Mario('d)</h3>
                     Bumping an enemy from below
                     <p class="info">"I mario'd them and they scored :C"</p>
                 </li>
                 <li>
-                    <h3 class="multi">DM</h3>
+                    <h3 style="background-color: var(--multi);">DM</h3>
                     Primarily going for kills
                     <p class="info">"We need more DM"</p>
                 </li>
                 <li>
-                    <h3 class="med">Buff(s)</h3>
+                    <h3 style="background-color: var(--med);">Buff(s)</h3>
                     Overhealing your teammates. Ideally during set-up and with the Stock load out.
                     <p class="info">"on right shelf med buff me please"</p>
                 </li>
                 <li>
-                    <h3 class="demo">Demothing</h3>
+                    <h3 style="background-color: var(--demo);">Demothing</h3>
                     Throwing the ball on a ramp and trimping to catch it in the air
                     <p class="info">"i can do  demo ting .   demo bing !!!"</p>
                 </li>
                 <li>
-                    <h3 class="xplosive">Dribbling</h3>
+                    <h3 style="background-color: var(--xplosive);">Dribbling</h3>
                     Jumping to confuse enemy defenders or to reposition with the ball in hand
                     <p class="info">"Dont jump yet they're dribbling"</p>
                     <ul>
                         <li>
-                            <h3 class="xplosive">Wall Dribble</h3>
+                            <h3 style="background-color: var(--xplosive);">Wall Dribble</h3>
                             Throwing the ball at a wall and jumping on the ground in a way that neutrals
                             the ball for the player to pick up again
                             <p class="info">"Im a stoic dude I cant steal the ball after they wall dribble"</p>
                         </li>
                         <li>
-                            <h3 class="multi">Rebound Dribble</h3>
+                            <h3 style="background-color: var(--multi);">Rebound Dribble</h3>
                             Throwing the ball near the lower part of a ledge/wall so it neutrals when it 
                             hits the ground and magnets towards the player when they jump
                             <p style="font-style: italic">Note: Med can wall dribble by VSH climbing on the ground<br><br>"My magnet failed my rebound dribble"</p>
@@ -226,7 +226,7 @@
                             </video>
                         </li>
                         <li>
-                            <h3 class="xplosive">Pencil Dribble</h3>
+                            <h3 style="background-color: var(--xplosive);">Pencil Dribble</h3>
                             Throwing the ball down then jumping and catching it after it bounces off the ground
                             <p style="font-style: italic">"Pencil dribbles are really easy to airshot"</p>
                             <video width="320" height="240" loop muted>
@@ -234,7 +234,7 @@
                             </video>
                         </li>
                         <li>
-                            <h3 class="xplosive">Fence Dribble</h3>
+                            <h3 style="background-color: var(--xplosive);">Fence Dribble</h3>
                             Dribbling around the fence, which is a/are small structure/s in front of the goal
                             <p style="font-style: italic">"Hey guys I just learned how to fence dribble can I get master"</p>
                             <video width="320" height="240" loop muted>
@@ -244,7 +244,7 @@
                     </ul>
                 </li>
                 <li>
-                    <h3 class="xplosive">Ball Pogo</h3>
+                    <h3 style="background-color: var(--xplosive);">Ball Pogo</h3>
                     Jumping on the ball to boost yourself in the air
                     <p style="font-style: italic">"Blal pogo"</p>
                     <video width="320" height="240" loop muted>
@@ -252,14 +252,14 @@
                     </video>
                     <ul>
                         <li>
-                            <h3 class="xplosive">Instadet</h3>
+                            <h3 style="background-color: var(--xplosive);">Instadet</h3>
                             A special ball pogo where the ball is immediately picked up after jumping on the ball
                             <p style="font-style: italic">"INDESTATE !!!"</p>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <h3 class="multi">Pult</h3>
+                    <h3 style="background-color: var(--multi);">Pult</h3>
                     Throwing the ball on a map entity that catapults the ball away from your goal towards 
                     the middle of the map
                     <p style="font-style: italic">"Pult ball I'm on mid"</p>
@@ -268,7 +268,7 @@
                     </video>
                     <ul>
                         <li>
-                            <h3 class="multi">Slam-a-pult</h3>
+                            <h3 style="background-color: var(--multi);">Slam-a-pult</h3>
                             Splashing the ball after it pults to send it very far
                             <p style="font-style: italic">"Oh they slamapulted guyz"</p>
                             <video width="320" height="240" loop muted>
@@ -278,12 +278,12 @@
                     </ul>
                 </li>
                 <li>
-                    <h3 class="multi">Lob</h3>
+                    <h3 style="background-color: var(--multi);">Lob</h3>
                     Throwing the ball at a high angle, usually as a mix-up or in an attempt to score
                     <p style="font-style: italic">"I went for the lob and sharted :C"</p>
                 </li>
                 <li>
-                    <h3 class="solly">Hookshot</h3>
+                    <h3 style="background-color: var(--solly);">Hookshot</h3>
                     Lobbing at a wall then wall jumping on the same wall to pick it 
                     <p style="font-style: italic">"I went for the hookshot and sharted :C"</p>
                     <video width="320" height="240" loop muted>
@@ -291,14 +291,14 @@
                     </video>
                 </li>
                 <li>
-                    <h3 class="xplosive">Extender</h3>
+                    <h3 style="background-color: var(--xplosive);">Extender</h3>
                     Throwing the ball at a wall or ramp while surfing, then jumping and catching the ball 
                     when it bounces back
                     <p style="font-style: italic">Note: medic with the VSH climb can extender but it's
                         by melee-ing the ball<br><br>"He sharted the extender LOL"</p>
                 </li>
                 <li>
-                    <h3 class="multi">Self Bomb</h3>
+                    <h3 style="background-color: var(--multi);">Self Bomb</h3>
                     A series of jumps/trimps and tricks performed one after the other to bring the player and 
                     ball towards the enemy goal for a score
                     <p style="font-style: italic">"Nice self bomb"</p>
@@ -307,38 +307,38 @@
                     </video>
                     <ul>
                         <li>
-                            <h3 class="multi">Death Bomb</h3>
+                            <h3 style="background-color: var(--multi);">Death Bomb</h3>
                             Killbinding while the bomb is following you for it to fall in the goal after you die
                             <p style="font-style: italic">"Nice death bomb"</p>
                         </li>
                         <li>
-                            <h3 class="multi">Alive Bomb</h3>
+                            <h3 style="background-color: var(--multi);">Alive Bomb</h3>
                             Directing the ball with your magnet for it to fall in the goal
                             <p style="font-style: italic">"OMG alive bomb"</p>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <h3 class="multi">Pushing/Pulling</h3>
+                    <h3 style="background-color: var(--multi);">Pushing/Pulling</h3>
                     Splashing the ball as it spawns to bring it towards or away from your position
                     <p style="font-style: italic">"Pulling right side"</p>
                     <ul>
                         <li>
-                            <h3 class="multi">Evil Pull</h3>
+                            <h3 style="background-color: var(--multi);">Evil Pull</h3>
                             Pulling the ball while you're on the enemy side to score a goal
                             <p style="font-style: italic">"I'm evil pulling play lower"</p>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <h3 class="xplosive">Winstrat</h3>
+                    <h3 style="background-color: var(--xplosive);">Winstrat</h3>
                     Performing a self bomb that, when timed correctly, allows you to catch the ball 
                     as it spawns and immediately score
                     <p style="font-style: italic">Note: QuickFix medic can winstrat but you need a soldier to
                         do the regular winstrat jumps to do so<br><br>"Winstratting upper"</p>
                 </li>
                 <li>
-                    <h3 class="multi">Panacea</h3>
+                    <h3 style="background-color: var(--multi);">Panacea</h3>
                     Catching the ball as it's falling from upper spawn and scoring
                     <p style="font-style: italic">"Why panacea I was on up right for handoff"</p>
                     <video width="320" height="240" loop muted>
@@ -346,12 +346,12 @@
                     </video>
                 </li>
                 <li>
-                    <h3 class="multi">Shart</h3>
+                    <h3 style="background-color: var(--multi);">Shart</h3>
                     Missing a free goal or failing something in general
                     <p style="font-style: italic">"Nice shart bro"</p>
                     <ul>
                         <li>
-                            <h3 class="multi">Toiletbowl</h3>
+                            <h3 style="background-color: var(--multi);">Toiletbowl</h3>
                             Sharting in a way where the ball neutrals and circles around the inner rim of the goal
                             <p style="font-style: italic">"IT TOILET BOWLLLLEEDDD 😭😭😭😭"</p>
                             <video width="320" height="240" loop muted>
@@ -361,30 +361,30 @@
                     </ul>
                 </li>
                 <li>
-                    <h3 class="multi">Bonsteal</h3>
+                    <h3 style="background-color: var(--multi);">Bonsteal</h3>
                     Blocking a teammate's score by catching the ball before it goes in the goal
                     <p style="font-style: italic;"><br>Named after Bonschicklol, a very notorious player during the early days of APTA<br><br>"WHYYYY" - dimandos48 after the <a href="https://youtu.be/PxDhdOzZ7Tg?si=btzGcij3r60TgmBp&t=27" target="_blank">first ever bonsteal</a></p>
                     <img src="images/termGifs/bonsteal.gif" class="gif">
                 </li>
                 <li>
-                    <h3 class="multi">Handoff</h3>
+                    <h3 style="background-color: var(--multi);">Handoff</h3>
                     Passing to a teammate without locking on for them to catch
                     <p style="font-style: italic">"Handoff upper left"</p>
                     <img src="images/termGifs/handoff.gif" class="gif">
                     <ul>
                         <li>
-                            <h3 class="multi">Chinese/Death Handoff</h3>
+                            <h3 style="background-color: var(--multi);">Chinese/Death Handoff</h3>
                             Killbinding with the ball in hand for a teammate to catch
                             <p style="font-style: italic">"I'll chinese, jump quick"</p>
                         </li>
                         <li>
-                            <h3 class="multi">Japanese Handoff</h3>
+                            <h3 style="background-color: var(--multi);">Japanese Handoff</h3>
                             Having a teammate catch the ball while it's following you to handoff, usually 
                             killbinding beforehand
                             <p style="font-style: italic">"JAPANESE THIS BRO"</p>
                         </li>
                         <li>
-                            <h3 class="multi">Korean Handoff</h3>
+                            <h3 style="background-color: var(--multi);">Korean Handoff</h3>
                             Having the teammate catch the ball while its magnet is still in effect
                             <p style="font-style: italic">"OH MY GOD KOREAN" - unc (_YEE)</p>
                             <img src="images/termGifs/korean.gif" class="gif">
@@ -392,23 +392,23 @@
                     </ul>
                 </li>
                 <li>
-                    <h3 class="multi">Ego</h3>
+                    <h3 style="background-color: var(--multi);">Ego</h3>
                     Selfishly going for solo goals, usually failing to do so
                     <p style="font-style: italic">"y u ego u nub"</p>
                 </li>
                 <li>
-                    <h3 class="multi">Baiting</h3>
+                    <h3 style="background-color: var(--multi);">Baiting</h3>
                     <p style="clear: right;">Positioning yourself forward when your team is on defense</p>
                     <img src="images/bait.png" class="gif">
                 </li>
                 <li>
-                    <h3 class="multi">Cherry Picking</h3>
+                    <h3 style="background-color: var(--multi);">Cherry Picking</h3>
                     Purposefully positioning yourself forward, usually 
                     on ultra or gay/pride
                     <p style="font-style: italic">"Im cherrying on gay"</p>
                     <ul>
                         <li>
-                            <h3 class="multi">Right/Left Dimandos</h3>
+                            <h3 style="background-color: var(--multi);">Right/Left Dimandos</h3>
                             Pixel walking on upper left/right to cherry pick
                         </li>
                     </ul>
