@@ -1,0 +1,205 @@
+:root {
+    --bg: rgb(198, 240, 144);
+    --hdr: rgb(241, 231, 138);
+    --hdrbc: rgb(18, 131, 46);
+    --divbg: linear-gradient(to bottom, rgb(138, 247, 111), rgb(197, 233, 97));
+    --divbc: rgb(18, 131, 46);
+
+    --text: rgb(0, 0, 0);
+
+    --txtshadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    --anchorcolor: purple
+}  
+.darkmode{
+    --bg: rgb(37, 35, 34);
+    --hdr: rgb(37, 35, 34);
+    --hdrbc: rgb(219, 209, 204);
+    --divbg: linear-gradient(to bottom, rgb(63, 60, 60), rgb(73, 70, 70));
+    --divbc: rgb(121, 119, 117);
+
+    --text: white;
+
+    --txtshadow: 5px 5px 15px rgba(0, 0, 0, 1);
+    --anchorcolor: violet;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: var(--text);
+    text-shadow: var(--txtshadow);
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+div {
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: var(--divbc);
+    border-style: inset;
+
+    margin-top: 10px;
+
+    padding: 5px;
+
+    background-image: var(--divbg);
+}
+
+body {
+    background-color: var(--bg);
+}
+
+#mainstuff {
+    width: 50%;
+    margin: auto;
+    padding: 2.5%;
+    border-radius: 25px;
+}
+
+header {
+    background-color: var(--hdr);
+
+    text-align: center;
+
+    color: var(--hdrtext);
+
+    border-radius: 50px;
+    border-width: 5px;
+    border-color: var(--hdrbc);
+    border-style: inset;
+}
+
+.ptlogo {
+    height: 30%;
+    width: 30%;
+}
+
+#theButton {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 45px;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+
+    background-color: rgb(56, 117, 37);
+
+    color: rgb(221, 236, 196);
+
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgb(221, 236, 196);
+    border-style: inset;
+
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(48, 105, 31);
+    cursor: pointer;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.calloutImg {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+.miniExample {
+    height: 150px;
+    width: auto;
+
+    border-radius: 10px;
+
+    margin-top: 10px;
+}
+
+/* code by sashalegeughsse */
+video {
+    display: block;
+    margin: 10px auto;
+    width: 60vw;
+    height: auto;
+    max-width: 800px; 
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.pdf {
+    display: block;
+    margin: 10px auto;
+    width: 60vw;
+    height: 25vw;
+    max-width: 800px; 
+
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.download {
+    display: block;
+    margin: 10px auto;
+    width: auto;
+    padding: 10px;
+
+    background-color: rgb(56, 117, 37);
+
+    color: rgb(221, 236, 196);
+
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: rgb(221, 236, 196);
+    border-style: inset;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+#theme-switch {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+#theme-switch img:last-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:first-child {
+    display: none;
+}
+
+.darkmode #theme-switch img:last-child {
+    display: block;
+}
+
+a {
+    color: var(--anchorcolor);
+    font-style: italic;
+}
