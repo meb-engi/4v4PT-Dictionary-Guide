@@ -7,8 +7,12 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="styleSheets/dictionaryStyles.css">
     <script type="text/javascript" src="javaScript/darkmode.js" defer></script>
+    <script type="text/javascript" src="javaScript/preloader.js" defer></script>
 </head>
 <body>
+
+    <div id="preloader" style="text-align: center;"><h1>hi ts is still loading</h1><br><img src="images/bonsdance.webp" alt="bonskirk" style="margin: auto;"></div>
+
     <div id="mainstuff">
         <header>
             <button id="theme-switch" style="background-color: rgb(37, 35, 34);">
@@ -18,7 +22,7 @@
             <img src="images/APTA_LOGO_light.webp" class="ptlogo" id="apta">
             <img src="images/OCE_LOGO.webp" class="ptlogo">
             <h1>4v4 PASS Time Dictionary (ASIA + OCE)</h1>
-            <h2>Ver 4.1.3 4/30/26</h2>
+            <h2>Ver 4.1.4 5/1/26</h2>
         </header>
         <a href="guide.html" id="theButton"><button>4v4 PASS Time Guide (ASIA + OCE)</button></a>
         <div id="legend" class="liststuff" style="margin-top: 45px;">
@@ -433,7 +437,9 @@
                     <h3 style="background-color: var(--multi);">Bonsteal</h3>
                     Blocking a teammate's score by catching the ball before it goes in the goal
                     <p style="font-style: italic;"><br>Named after Bonschicklol, a very notorious player during the early days of APTA<br><br>"WHYYYY" - dimandos48 after the <a href="https://youtu.be/PxDhdOzZ7Tg?si=btzGcij3r60TgmBp&t=27" target="_blank">first ever bonsteal</a></p>
-                    <img src="images/termGifs/bonsteal.gif" class="gif">
+                    <video width="320" height="240" loop>
+                        <source src="videos/bonsteal.webm" type="video/webm">
+                    </video>
                 </li>
                 <li>
                     <h3 style="background-color: var(--multi);">Handoff</h3>
@@ -464,7 +470,9 @@
                             <h3 style="background-color: var(--multi);">Korean Handoff</h3>
                             Having the teammate catch the ball while its magnet is still in effect
                             <p style="font-style: italic">"OH MY GOD KOREAN" - unc (_YEE)</p>
-                            <img src="images/termGifs/korean.gif" class="gif">
+                            <video width="320" height="240" loop muted>
+                                <source src="videos/handoff_korean.webm" type="video/webm">
+                            </video>
                         </li>
                     </ul>
                 </li>
@@ -476,7 +484,7 @@
                 <li>
                     <h3 style="background-color: var(--multi);">Baiting</h3>
                     <p style="clear: right;">Positioning yourself forward when your team is on defense</p>
-                    <img src="images/bait.png" class="gif">
+                    <img src="images/bait.png">
                 </li>
                 <li>
                     <h3 style="background-color: var(--multi);">Cherry Picking</h3>

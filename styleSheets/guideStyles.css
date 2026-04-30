@@ -30,6 +30,14 @@
     text-shadow: var(--txtshadow);
 }
 
+#preloader {
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
 h1 {
     font-size: xx-large;
 }
