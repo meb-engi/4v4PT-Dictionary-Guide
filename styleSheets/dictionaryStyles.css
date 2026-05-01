@@ -14,7 +14,9 @@
     --multi: rgb(147, 196, 125);
 
     --txtshadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    --anchorcolor: purple
+    --anchorcolor: purple;
+
+    --preloader: rgb(255, 255, 255);
 }  
 .darkmode{
     --bg: rgb(37, 35, 34);
@@ -33,6 +35,8 @@
 
     --txtshadow: 5px 5px 15px rgba(0, 0, 0, 1);
     --anchorcolor: violet;
+
+    --preloader: rgb(0, 0, 0);
 }
 
 * {
@@ -43,11 +47,21 @@
 }
 
 #preloader {
-    background: #000;
-    height: 100vh;
+    background: var(--preloader);
+    height: 100%;
     width: 100%;
     position: fixed;
     z-index: 100;
+
+    border-radius: 0px;
+    border-width: 0px;
+    border-color: none;
+    border-style: none;
+
+    margin: 0px;
+    padding: 0px;
+
+    /* poggers fix the gap lmaoaoaoao */
 }
 
 h1 {
