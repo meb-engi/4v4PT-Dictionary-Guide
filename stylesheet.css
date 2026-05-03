@@ -18,6 +18,11 @@
     --txtshadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* text shadow */
     --anchorcolor: purple; /* <a> color */
 
+    /* button colors */
+    --btncolor: rgb(56, 117, 37);
+    --btnhover: rgb(48, 105, 31);
+    --btnactive: rgb(40, 93, 25);
+
     --preloader: rgb(255, 255, 255); /* preloader background color */
 
     --msOpacity: 0.9; /* mainstuff opacity */
@@ -41,6 +46,11 @@
 
     --txtshadow: 5px 5px 15px rgba(0, 0, 0, 1); /* text shadow */
     --anchorcolor: violet; /* <a> color */
+
+    /* button colors */
+    --btncolor: rgb(37, 35, 34);
+    --btnhover: rgb(15, 15, 14);
+    --btnactive: rgb(0, 0, 0);
 
     --preloader: rgb(0, 0, 0); /* preloader background color */
 
@@ -87,17 +97,22 @@ h2 {
     transition: opacity 250ms ease, transform 250ms ease, visibility 250ms ease;
     position: fixed;
     bottom: 0px;
-    right: 0px;
+    left: 0px;
     z-index: 99;
     color: white;
     cursor: pointer;
     padding: 15px;
+    transition: all ease-in-out 0.3s;
 }
 
 #myBtn.show {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+}
+
+#myBtn:hover {
+    background-color: var(--btnhover);
 }
 
 div {
@@ -164,7 +179,7 @@ button {
     width: 100%;
     padding: 10px;
 
-    background-color: rgb(56, 117, 37);
+    background-color: var(--btncolor);
 
     color: rgb(221, 236, 196);
 
@@ -174,11 +189,19 @@ button {
     border-style: inset;
 
     font-weight: bold;
+    transition: all ease-in-out 0.3s;
 }
 
 button:hover {
-    background-color: rgb(48, 105, 31);
+    background-color: var(--btnhover);
     cursor: pointer;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: var(--btnactive);
+    transform: scale(0.95);
+    transition: transform 0.3s ease;
 }
 
 footer {
