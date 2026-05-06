@@ -96,19 +96,29 @@ h2 {
 }
 
 #myBtn {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     visibility: hidden;
     transform: translateY(10px);
-    transition: opacity 250ms ease, transform 250ms ease, visibility 250ms ease;
+    transition: opacity 250ms ease, transform 250ms ease, visibility 250ms ease, background-color 250ms ease;
     position: fixed;
     bottom: 0px;
     left: 0px;
+    right: 0px;
     z-index: 99;
     color: white;
     cursor: pointer;
-    padding: 15px;
-    transition: all ease-in-out 0.3s;
+    width: 100vw;
+    height: 55px;
+    padding: 0;
+}
+
+#myBtn img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 #myBtn.show {
@@ -357,8 +367,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    border-radius: 10px;
 
     font-weight: bold;
     transition: all ease-in-out 0.3s;
