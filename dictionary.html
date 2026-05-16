@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="darkmode">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +45,7 @@
             <img src="images/logo/APTA_LOGO_light.webp" class="ptlogo" id="apta">
             <img src="images/logo/OCE_LOGO.webp" class="ptlogo">
             <h1>4v4 PASS Time Dictionary (ASIA + OCE)</h1>
-            <h2>Ver 4.2.5 5/6/26</h2>
+            <h2>Last Updated 5/16/26</h2>
         </header>
         <a href="guide.html" id="theButton"><button>4v4 PASS Time Guide (ASIA + OCE)</button></a>
         <a href="index.html" id="theButton"><button>Home Page</button></a>
@@ -128,7 +128,7 @@
         <div id="gameplay" class="liststuff">
             <h3>GAMEPLAY TERMINOLOGY</h3>
             Note: Jump = Rocket/Pipe Jumping, Ball = Jack
-            <br>Note: Some example videos require your cursor to hover over it to play. If they don't load, please refresh
+            <br><hi class="italic">Hover over the videos to play. Click to full screen and click again to undo that</hi>
             <ul>
                 <li>
                     <h3 style="background-color: var(--multi);">Steal</h3>
@@ -176,8 +176,9 @@
                 </li>
                 <li>
                     <h3 style="background-color: var(--multi);">Defend</h3>
-                    Attempting to deny a score by blocking your goal or killing 
-                    <p class="info">"GO BACK DEFEND !!!"<br>See Guide for more details.</p>
+                    Attempting to deny a score by blocking your goal or killing. More details in 
+                    <a href="guide.html#dfnsguide">Moose's Defense Guide</a>
+                    <p class="info">"GO BACK DEFEND !!!"</p>
                     <video width="320" height="240" loop muted>
                         <source src="videos/splash_defense.webm" type="video/webm">
                     </video>
@@ -274,7 +275,7 @@
                     </video>
                 </li>
                 <li>
-                    <h3 style="background-color: var(--demo);">Demothing</h3>
+                    <h3 style="background-color: var(--demo);" id="demothing">Demothing</h3>
                     Throwing the ball on a ramp and trimping to catch it in the air
                     <p class="info">"i can do  demo ting .   demo bing !!!"</p>
                     <video width="320" height="240" loop muted>
@@ -302,7 +303,7 @@
                             </video>
                         </li>
                         <li>
-                            <h3 style="background-color: var(--xplosive);">Pencil Dribble</h3>
+                            <h3 style="background-color: var(--xplosive);" id="pencil_dribble">Pencil Dribble</h3>
                             Throwing the ball down then jumping and catching it after it bounces off the ground
                             <p style="font-style: italic">"Pencil dribbles are really easy to airshot"</p>
                             <video width="320" height="240" loop muted>
@@ -418,7 +419,7 @@
                     </ul>
                 </li>
                 <li>
-                    <h3 style="background-color: var(--multi);">Pushing/Pulling</h3>
+                    <h3 style="background-color: var(--multi);" id="pushpull">Pushing/Pulling</h3>
                     Splashing the ball as it spawns to bring it towards or away from your position
                     <p style="font-style: italic">"Pulling right side"</p>
                     <video width="320" height="240" loop muted>
@@ -454,6 +455,10 @@
                     </video>
                     <ul>
                         <li>
+                            <h3 style="background-color: var(--multi);">Mickey Magnet</h3>
+                            Going for an intercept but the ball magnet fails for whatever reason.
+                        </li>
+                        <li>
                             <h3 style="background-color: var(--multi);">Toiletbowl</h3>
                             Sharting in a way where the ball neutrals and circles around the inner rim of the goal
                             <p style="font-style: italic">"IT TOILET BOWLLLLEEDDD 😭😭😭😭"</p>
@@ -464,9 +469,9 @@
                     </ul>
                 </li>
                 <li>
-                    <h3 style="background-color: var(--multi);">Bonsteal</h3>
+                    <h3 style="background-color: var(--multi);" id="bonsteal">Bonsteal</h3>
                     Blocking a teammate's score by catching the ball before it goes in the goal
-                    <p style="font-style: italic;"><br>Named after Bonschicklol, a very notorious player during the early days of APTA<br><br>"WHYYYY" - dimandos48 after the <a href="https://youtu.be/PxDhdOzZ7Tg?si=btzGcij3r60TgmBp&t=27" target="_blank">first ever bonsteal</a></p>
+                    <p style="font-style: italic;"><br>Named after Bonschicklol, a very notorious player during the early days of APTA (turn on audio lol)<br><br>"WHYYYY" - dimandos48 after the <a href="https://youtu.be/PxDhdOzZ7Tg?si=btzGcij3r60TgmBp&t=27" target="_blank">first ever bonsteal</a></p>
                     <video width="320" height="240" loop>
                         <source src="videos/bonsteal.webm" type="video/webm">
                     </video>
@@ -513,7 +518,8 @@
                 </li>
                 <li>
                     <h3 style="background-color: var(--multi);">Baiting</h3>
-                    <p style="clear: right;">Positioning yourself forward when your team is on defense</p>
+                    <p style="clear: right;">Positioning yourself forward when your team is on defense. More details in 
+                    <a href="guide.html#dfnsguide">Moose's Defense Guide</a></p>
                     <img src="images/bait.webp" id="bait">
                 </li>
                 <li>
@@ -533,6 +539,34 @@
                             </video>
                         </li>
                     </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="misc" class="liststuff">
+            <h3>MISCILANEOUS TERMS</h3>
+            Note: These are non-gameplay terms and other random joke-y stuff
+            <ul>
+                <li>
+                    <h3>Baiting (PUGs)</h3>
+                    Adding yourself to the queue and failing to show up when its filled for at least 10 minutes
+                </li>
+                <li>
+                    <h3>Cheese</h3>
+                    Anything that is lucky, or unfun to play against
+                    <p class="italic">"Another demothing? Really? How cheesy can this guy get"</p>
+                </li>
+                <li>
+                    <h3>Mute</h3>
+                    A player who doesn't have a mic due to temporary technical issues, or due to simply not having one
+                    <p class="italic">Just to be clear, you need a mic to play.</p>
+                </li>
+                <li>
+                    <h3>May 3rd</h3>
+                    The date of the first ever <a href="dictionary.html#bonsteal">bonsteal</a>
+                </li>
+                <li>
+                    <h3>Wordle</h3>
+                    The game everyone plays instead of passtime i guess bro im going to explod💥
                 </li>
             </ul>
         </div>
