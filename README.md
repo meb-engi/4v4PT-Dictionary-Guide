@@ -1,5 +1,3 @@
-Hi, its meb
-
 This project started with just the [dictionary on a google doc](https://docs.google.com/document/d/1l4E-x2hFSZi9X0jbZp3QMqdXW0mzxJ8A-Rfa6WtSiWE/edit?usp=sharing), heavily inspired by the very very old ["PASS Time Terminology" document](https://docs.google.com/document/d/16XF_5OQBjfrWuA5VAnFG40xmaLY4-XxIvLpxjXuJ9NI/edit?usp=sharing) from NA.
 With very basic knowledge of html I learned from my CS class, I started making this because google docs is kinda limiting lowk.
 
