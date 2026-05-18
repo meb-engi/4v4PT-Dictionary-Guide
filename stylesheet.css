@@ -93,6 +93,7 @@ h1 {
 
 h2 {
     font-size: x-large;
+    text-align: center;
 }
 
 #myBtn {
@@ -261,6 +262,17 @@ video:hover {
 
 video:active {
     transform: scale(0.95);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+    
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100% !important;
+    height: auto;
 }
 
 
