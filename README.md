@@ -3,7 +3,7 @@ With very basic knowledge of html I learned from my CS class, I started making t
 
 Shoutout to the multiple players from every region who has helped me on the dictionary. Can't do it w/o yall fr
 
-Currently this repo is managed by me and poggers. He's done most of the heavy work setting up the repository, so ultra shoutout him !!!
+Currently this repo is managed by meb and poggers. He's done most of the heavy work setting up the repository, so ultra shoutout him !!!
 
 if u wanna contact us our dc is -
 meb.engi
