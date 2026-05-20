@@ -114,6 +114,11 @@ h2 {
     width: 100vw;
     height: 55px;
     padding: 0;
+    background-color: transparent;
+}
+
+#myBtn:hover {
+    background-color: rgba(0, 0, 0, 0.473);
 }
 
 #myBtn img {
@@ -128,11 +133,8 @@ h2 {
     transform: translateY(0);
 }
 
-#myBtn:hover {
-    background-color: var(--btnhover);
-}
-
 div {
+    
     border-radius: 10px;
     border-width: 5px;
     border-color: var(--divbc);
@@ -151,14 +153,17 @@ body {
     background-position: top;
     background-size: 100vw;
     background-repeat: no-repeat;
+    transition: all ease-in-out 0.3s;
 }
 
 #mainstuff {
+    
     width: 50%;
     margin: auto;
     padding: 2.5%;
     border-radius: 25px;
     padding-bottom: 0px;
+    
 }
 
 header {
@@ -455,4 +460,19 @@ span{
     padding-top: 20px;
     font-size: 50px;
     font-family: "Montserrat", sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for IE (who uses this lol) */
+html {
+  -ms-overflow-style: none;
 }
