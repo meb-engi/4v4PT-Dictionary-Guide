@@ -1,11 +1,21 @@
 h1 {
     font-size: xx-large;
     font-family: "Bebas Neue", sans-serif;
+    cursor: default;
 }
 
 p{
     text-align: justify;
     font-family: "Poppins", sans-serif;
+    cursor: default;
+}
+
+.lift {
+    transition: transform 0.22s cubic-bezier(0.25, 1.2, 0.5, 1), box-shadow 0.22s ease;
+}
+
+.lift:hover {
+    transform: translateY(-6px) scale(1.015);
 }
 
 a {
@@ -19,3 +29,9 @@ hi {
 button {
     font-family: "Montserrat", sans-serif;
 }
+
+video:hover {
+    transform: scale(1);
+    cursor: default;
+}
+
