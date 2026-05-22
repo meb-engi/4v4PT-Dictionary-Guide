@@ -28,6 +28,7 @@
   --btnactive: rgb(40, 93, 25);
 
   --preloader: rgb(255, 255, 255); /* preloader background color */
+  --themetogglebg: rgb(37, 35, 34);
 
   --loadingtxt: rgb(204, 204, 204);
   --landing-bg: url("images/BANNER_BG_light.webp");
@@ -64,6 +65,7 @@
   --btnactive: rgb(0, 0, 0);
 
   --preloader: rgb(26, 26, 26); /* preloader background color */
+  --themetogglebg: rgb(198, 240, 144);
 
   --loadingtxt: rgb(51, 51, 51);
   --landing-bg: url("images/BANNER_BG.webp");
