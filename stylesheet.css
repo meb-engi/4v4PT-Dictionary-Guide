@@ -126,9 +126,6 @@ h2 {
   width: 100vw;
   height: 55px;
   background-color: transparent;
-  padding: 0;
-  border: none;
-  background: none;
 }
 
 #myBtn:hover {
@@ -489,4 +486,10 @@ html {
 /* Hide scrollbar for IE (who uses this lol) */
 html {
   -ms-overflow-style: none;
+}
+
+.ghostbtn {
+  padding: 0;
+  border: none;
+  background: none;
 }
