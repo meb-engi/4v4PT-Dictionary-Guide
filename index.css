@@ -11,7 +11,7 @@ p{
 }
 
 .lift {
-    transition: transform 0.22s cubic-bezier(0.25, 1.2, 0.5, 1), box-shadow 0.22s ease;
+    transition: transform .5s cubic-bezier(0.25, 1.2, 0.5, 1), box-shadow 0.22s ease;
 }
 
 .lift:hover {
@@ -24,10 +24,6 @@ a {
 
 hi {
     font-family: inherit;
-}
-
-button {
-    font-family: "Montserrat", sans-serif;
 }
 
 video:hover {
