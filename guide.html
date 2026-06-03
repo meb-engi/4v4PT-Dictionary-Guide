@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="javaScript/darkmode.js" defer></script>
-    <script type="text/javascript" src="javaScript/preloader.js" defer></script>
+    <script type="text/javascript" src="javascript.js" defer></script>
 </head>
 <body id="landingBG">
+    
+    <!--WIP LOLOLOOOLLOLOOLO-->
+    <!--If ure expecting cleaner code uhhhh :v: :joy:-->
 
+    <!--todo: turn this into a proper skeleton of the page-->
     <div id="preloader" style="text-align: center;"><h1 class="loading">
         <span class="loading-item">L</span>
         <span class="loading-item">o</span>
@@ -28,30 +31,57 @@
         <img src="images/THROBBER_light.webp" id="throbber" class="throbber" style="margin: auto; height: 50%; width: auto;">
     </div>
 
+    <div id="menu">
+        <h2>Sections</h2>
+        <ul>
+            <li>
+                <a href="#basics">Basics</a>
+            </li>
+            <li>
+                <a href="#callouts">Call Outs</a>
+            </li>
+            <li>
+                <a href="#gameguide">Game Guide</a>
+            </li>
+            <li>
+                <a href="#selfbombs">Bombs & Self Bombs</a>
+            </li>
+            <li>
+                <a href="#rollouts">Rollouts</a>
+            </li>
+        </ul>
+    </div>
+
     <div id="mainstuff">
-        <button class="ghostbtn" onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/arrow_up.svg" alt="Go to top"></button>
-        <script type="text/javascript" src="javaScript/scrollToTop.js" defer></script>
+        <diiv id="GoToTop">
+            <button class="ghostbtn" onclick="topFunction()" id="myBtn" title="Go to top">
+                <img src="images/arrow_up.svg" alt="Go to top"><br>
+                Scroll back to the top?
+            </button>
+        </diiv>
 
         <header>
-            <button id="theme-switch" style="background-color: var(--themetogglebg);">
+            <button class="ghostbtn" id="theme-switch" style="background-color: var(--themetogglebg);">
                 <img src="images/dark_mode.svg" id="darkicon">
                 <img src="images/light_mode.svg" id="lighticon">
             </button>
             <img src="images/logo/APTA_LOGO_light.webp" class="ptlogo" id="apta">
             <img src="images/logo/OCE_LOGO.webp" class="ptlogo">
-            <h1>4v4 PASS Time Guide (ASIA + OCE)</h1>
-            <h2>Last Updated 5/20/26</h2>
+            <h1>4v4 PASS Time Guide</h1>
+            <h2>Last Updated 6/3/26</h2>
         </header>
+        
         <a href="dictionary.html" id="theButton"><button>4v4 PASS Time Dictionary (ASIA + OCE)</button></a>
         <a href="index.html" id="theButton"><button>Home Page</button></a>
-        <div>
+
+        <div id="basics">
             <h2>BASICS</h2>
             <span class="container">
                 <iframe style="display: block; margin: 0 auto;" width="560" height="315" src="https://www.youtube.com/embed/t01sfcj1qPw?si=cX32po4ee8VXvG5j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </span>
         </div>
         <!--note: make the call outs unordered lists <ul></ul>-->
-        <div>
+        <div id="callouts">
             <h2>CALL OUTS</h2>
             <p>Even if maps may differ from eachother the general lay out is consistent. The gold standard for map design currently
                 is the original, <hi class="bold">pass_arena2</hi>. All maps are symmetrical, so the call outs for 
@@ -137,7 +167,7 @@
             </ul>
 
         </div>
-        <div>
+        <div id="gameguide">
             <h2>SET-UP (GETTING EARLY BALL POSSESSION)</h2>
             <p>When the round starts, everyone should get overhealed/buffed. Ideally the <hi class="bold">Demo</hi> should switch to medic if there are none,
                  but it's not a big deal if a <hi class="bold">Soldier</hi> switches instead.
@@ -241,7 +271,7 @@
                 <li>If there are no more players waiting for passes then it's okay to stack multiple players on inside.</li>
             </ul>
         </div>
-        <div>
+        <div id="selfbombs">
             <h2 id="bombs">BOMBS & SELF BOMBS</h2>
             <p>This section will highlight very common (named) Bombs & Types of Self Bombs</p>
             <p class="italic">Note: You don't have to call these out before doing them, its just useful to be able to distinguish them</p>
@@ -319,7 +349,7 @@
             For more self bombs, check out <a href="https://www.youtube.com/watch?v=hYsapfqbldA" target="_blank">Owen's Everything Bomb Catalog</a>.
         </div>
         <!--note: add section for rollouts-->
-        <div>
+        <div id="rollouts">
             <h2>ROLL OUTS</h2>
             <p>
                 This section will showcase common rollouts for each class and when they are usually seen.
@@ -383,7 +413,6 @@
             </ul>
         </div>
     </div>
-    <script src="javaScript/videoPlayer.js"></script>
 </body>
 </html>
 <br>

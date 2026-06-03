@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="javaScript/darkmode.js" defer></script>
-    <script type="text/javascript" src="javaScript/preloader.js" defer></script>
+    <script type="text/javascript" src="javascript.js" defer></script>
 </head>
 <body id="landingBG">
 
     <!--WIP LOLOLOOOLLOLOOLO-->
     <!--If ure expecting cleaner code uhhhh :v: :joy:-->
     
+    <!--todo: turn this into a proper skeleton of the page-->
     <div id="preloader" style="text-align: center;"><h1 class="loading">
         <span class="loading-item">L</span>
         <span class="loading-item">o</span>
@@ -31,11 +31,34 @@
         <img src="images/THROBBER_light.webp" id="throbber" class="throbber" style="margin: auto; height: 50%; width: auto;">
     </div>
 
+    <div id="menu">
+        <h2>Sections</h2>
+        <ul>
+            <li>
+                <a href="#legend">Legend</a>
+            </li>
+            <li>
+                <a href="#loadouts">Popular Loadouts & Playstyles</a>
+            </li>
+            <li>
+                <a href="#gameplay">Gameplay Terminology</a>
+            </li>
+            <li>
+                <a href="#misc">Miscillaneous Terms</a>
+            </li>
+            <li>
+                <a href="#regional">Regional Terms</a>
+            </li>
+        </ul>
+    </div>
+
     <div id="mainstuff">
-        <button class="ghostbtn" onclick="topFunction()" id="myBtn" title="Go to top">
-            <img src="images/arrow_up.svg" alt="Go to top">
-        </button>
-        <script type="text/javascript" src="javaScript/scrollToTop.js" defer></script>
+        <diiv id="GoToTop">
+            <button class="ghostbtn" onclick="topFunction()" id="myBtn" title="Go to top">
+                <img src="images/arrow_up.svg" alt="Go to top"><br>
+                Scroll back to the top?
+            </button>
+        </diiv>
 
         <header>
             <button class="ghostbtn" id="theme-switch" style="background-color: var(--themetogglebg);">
@@ -44,11 +67,13 @@
             </button>
             <img src="images/logo/APTA_LOGO_light.webp" class="ptlogo" id="apta">
             <img src="images/logo/OCE_LOGO.webp" class="ptlogo">
-            <h1>4v4 PASS Time Dictionary (ASIA + OCE)</h1>
-            <h2>Last Updated 6/2/26</h2>
+            <h1>4v4 PASS Time Dictionary</h1>
+            <h2>Last Updated 6/3/26</h2>
         </header>
+
         <a href="guide.html" id="theButton"><button>4v4 PASS Time Guide (ASIA + OCE)</button></a>
         <a href="index.html" id="theButton"><button>Home Page</button></a>
+
         <div id="legend" class="liststuff" style="margin-top: 45px;">
             <h3>LEGEND</h3>
             <ul>
@@ -86,12 +111,12 @@
                     </ul>
                 </li>
                 <li>
-                    <h3 style="background-color: var(--demo);">Stoic (CaberKnight)</h3>
+                    <h3 style="background-color: var(--demo);" id="stoic">Stoic (CaberKnight)</h3>
                     <p class="bold">BOOTIES/BOOTLEGGER + SPLENDIDSCREEN + CABER</p>
                     <br>I'm travelling at the speed of light, I wanna make a supersonic man outta you
                 </li>
                 <li>
-                    <h3 style="background-color: var(--demo);">Pipes (HybridKnight)</h3>
+                    <h3 style="background-color: var(--demo);" id="pipes">Pipes (HybridKnight)</h3>
                     <p class="bold">STOCK/IRONBOMBER + SPLENDIDSCREEN + ANY WHITELISTED MELEE</p>
                     <br>Now where could my pipe be. garfield!
                 </li>
@@ -653,6 +678,5 @@
                 </a>
         </footer>
     </div>
-    <script src="javaScript/videoPlayer.js"></script>
 </body>
 </html>

@@ -26,6 +26,8 @@
   --btncolor: rgb(56, 117, 37);
   --btnhover: rgb(48, 105, 31);
   --btnactive: rgb(40, 93, 25);
+  --btncolorghost: rgba(56, 117, 37, 0.5);
+  --btnhoverghost: rgba(48, 105, 31, 0.75);
 
   --preloader: rgb(255, 255, 255); /* preloader background color */
   --themetogglebg: rgb(37, 35, 34);
@@ -63,6 +65,8 @@
   --btncolor: rgb(37, 35, 34);
   --btnhover: rgb(15, 15, 14);
   --btnactive: rgb(0, 0, 0);
+  --btncolorghost: rgba(37, 35, 34, 0.5);
+  --btnhoverghost: rgba(15, 15, 14, 0.75);
 
   --preloader: rgb(26, 26, 26); /* preloader background color */
   --themetogglebg: rgb(198, 240, 144);
@@ -85,7 +89,7 @@
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 100;
+  z-index: 110;
   top: 0;
   left: 0;
   border-radius: 0px;
@@ -106,32 +110,46 @@ h2 {
   text-align: center;
 }
 
-#myBtn {
+#GoToTop {
   display: flex;
-  align-items: center;
   justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px);
-  transition:
-    opacity 250ms ease,
-    transform 250ms ease,
-    visibility 250ms ease,
-    background-color 250ms ease;
+}
+
+#menu {
+  width: 15vw;
+
+  float: left;
+
   position: fixed;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: 99;
-  color: white;
-  cursor: pointer;
-  width: 100vw;
-  height: 55px;
-  background-color: transparent;
+  left: 2.5vw;
+
+}
+
+#myBtn {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: -10px;
+
+  width: 20vw;
+  min-width: 200px;
+  height: 10vh;
+  min-height: 100px;
+  margin: auto;
+
+  background-color: var(--btncolorghost);
+
+  z-index: 100;
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: rgb(221, 236, 196);
+  border-style: inset;
 }
 
 #myBtn:hover {
-  background-color: rgba(0, 0, 0, 0.473);
+  background-color: var(--btnhoverghost)
 }
 
 #myBtn img {
@@ -166,6 +184,10 @@ body {
   background-size: 100vw;
   background-repeat: no-repeat;
   transition: all ease-in-out 0.3s;
+
+  padding: 0;
+  margin: 0;
+  background-color: var(--bg);
 }
 
 #mainstuff {
@@ -420,11 +442,7 @@ p {
   text-align: justify;
 }
 html,
-body {
-  padding: 0;
-  margin: 0;
-  background-color: var(--bg);
-}
+
 .loading {
   color: var(--text);
   align-items: center;
@@ -475,23 +493,85 @@ span {
   font-family: "Montserrat", sans-serif;
 }
 
-/* Hide scrollbar for Chrome, Safari, and Edge */
+/* Hide scrollbar for Chrome, Safari, and Edge 
 html::-webkit-scrollbar {
   display: none;
 }
 
-/* Hide scrollbar for Firefox */
+/* Hide scrollbar for Firefox
 html {
   scrollbar-width: none;
 }
 
-/* Hide scrollbar for IE (who uses this lol) */
+/* Hide scrollbar for IE (who uses this lol)
 html {
   -ms-overflow-style: none;
-}
+}*/
 
 .ghostbtn {
   padding: 0;
   border: none;
   background: none;
+}
+
+.classCard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  max-width: 30%;
+  margin-top: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.classimg {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.classDescription {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  padding: 10px;
+
+  z-index: 10;
+
+  background-color: var(--divbg);
+  border-width: 5px;
+  border-radius: 10px;
+  border-color: var(--divbc);
+  border-style: inset;
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+
+  transition: all ease-in-out 0.3s;
+}
+
+.classimg:hover + .classDescription {
+  opacity: 1;
+  visibility: visible;
+
+  transition: all ease-in-out 0.3s;
+}
+
+.classDescription:hover {
+  opacity: 1;
+  visibility: visible;
+
+  transition: all ease-in-out 0.3s;
+}
+
+.descImg {
+  max-width: 100%;
+  height: auto;
 }
