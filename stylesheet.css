@@ -123,6 +123,7 @@ h2 {
   position: fixed;
   left: 2.5vw;
 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);;
 }
 
 #myBtn {
@@ -143,7 +144,7 @@ h2 {
 
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   border-width: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   border-color: rgb(221, 236, 196);
   border-style: inset;
 }
@@ -168,7 +169,7 @@ div {
   border-radius: 10px;
   border-width: 5px;
   border-color: var(--divbc);
-  border-style: inset;
+  border-style: groove;
 
   margin-top: 10px;
 
@@ -194,7 +195,7 @@ body {
   width: 50%;
   margin: auto;
   padding: 2.5%;
-  border-radius: 25px;
+  border-radius: 10px;
   padding-bottom: 0px;
 }
 
@@ -205,10 +206,10 @@ header {
 
   color: var(--hdrtext);
 
-  border-radius: 50px;
+  border-radius: 15px;
   border-width: 5px;
   border-color: var(--hdrbc);
-  border-style: inset;
+  border-style: groove;
 }
 
 .ptlogo {
@@ -239,7 +240,7 @@ button {
   color: rgb(221, 236, 196);
 
   border-width: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   border-color: rgb(221, 236, 196);
   border-style: inset;
 
@@ -251,12 +252,12 @@ button {
 button:hover {
   background-color: var(--btnhover);
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 button:active {
   background-color: var(--btnactive);
-  transform: scale(0.95);
+  transform: scale(1);
   transition: transform 0.3s ease;
 }
 
@@ -353,14 +354,14 @@ a {
   height: 100%;
   width: 100%;
 
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .miniExample {
   height: 150px;
   width: auto;
 
-  border-radius: 10px;
+  border-radius: 5px;
 
   margin-top: 10px;
   margin-right: 10px;
@@ -385,7 +386,7 @@ a {
   color: rgb(221, 236, 196);
 
   border-width: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   border-color: rgb(221, 236, 196);
   border-style: inset;
 
@@ -394,10 +395,12 @@ a {
 }
 
 .banner {
-  width: 75vw;
+  width: 50%;
   height: auto;
   display: block;
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @keyframes spinAnimation {
@@ -541,14 +544,16 @@ html {
   position: absolute;
   top: calc(100% + 10px);
   left: 0;
-  width: 100%;
+  width: 200%;
   padding: 10px;
+
+  max-height: 475px;
 
   z-index: 10;
 
   background-color: var(--divbg);
   border-width: 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   border-color: var(--divbc);
   border-style: inset;
 
@@ -572,6 +577,9 @@ html {
 }
 
 .descImg {
-  max-width: 100%;
-  height: auto;
+  max-width: 200px;
+  max-height: auto;
+
+  display: block;
+  margin: auto;
 }

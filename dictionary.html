@@ -16,29 +16,38 @@
     <!--If ure expecting cleaner code uhhhh :v: :joy:-->
     
     <!--todo: turn this into a proper skeleton of the page-->
-    <div id="preloader" style="text-align: center;"><h1 class="loading">
-        <span class="loading-item">L</span>
-        <span class="loading-item">o</span>
-        <span class="loading-item">a</span>
-        <span class="loading-item">d</span>
-        <span class="loading-item">i</span>
-        <span class="loading-item">n</span>
-        <span class="loading-item">g</span>
-        <span class="loading-item">.</span>
-        <span class="loading-item">.</span>
-        <span class="loading-item">.</span>
-    </h1><br>
+    <div id="preloader" style="text-align: center;">
+        <h1 class="loading">
+            <span class="loading-item">L</span>
+            <span class="loading-item">o</span>
+            <span class="loading-item">a</span>
+            <span class="loading-item">d</span>
+            <span class="loading-item">i</span>
+            <span class="loading-item">n</span>
+            <span class="loading-item">g</span>
+            <span class="loading-item">.</span>
+            <span class="loading-item">.</span>
+            <span class="loading-item">.</span>
+        </h1>
+        <br>
         <img src="images/THROBBER_light.webp" id="throbber" class="throbber" style="margin: auto; height: 50%; width: auto;">
+        <span style="display: block; width: 50%; margin: auto; margin-top: 20px;">
+            <h1>Stuck? <button onclick="location.reload()">Reload</button></h1>
+        </span>
     </div>
 
     <div id="menu">
         <h2>Sections</h2>
-        <ul>
+        <ol style="font-style: italic;">
             <li>
-                <a href="#legend">Legend</a>
-            </li>
+                <a href="#legend">Legend</a></li>
             <li>
                 <a href="#loadouts">Popular Loadouts & Playstyles</a>
+                <ul>
+                    <li><a href="#sollyloadouts">Soldier Loadouts</a></li>
+                    <li><a href="#stoic">Demoman Loadouts</a></li>
+                    <li><a href="#medicloadouts">Medic Loadouts</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#gameplay">Gameplay Terminology</a>
@@ -49,7 +58,7 @@
             <li>
                 <a href="#regional">Regional Terms</a>
             </li>
-        </ul>
+        </ol>
     </div>
 
     <div id="mainstuff">
@@ -88,7 +97,7 @@
             <h3>POPULAR LOADOUTS & PLAYSTYLES</h3>
             <ul>
                 <li>
-                    <h3 style="background-color: var(--solly);">Gunboats (Roamer)</h3>
+                    <h3 style="background-color: var(--solly);" id="sollyloadouts">Gunboats (Roamer)</h3>
                     <p class="bold">STOCK/ORIGINAL + GUNBOATS + ANY WHITELISTED MELEE</p>
                     <br>Airsot. You're expected to play this loadout
                 </li>
@@ -139,7 +148,7 @@
                     </ul>
                 </li>
                 <li>
-                    <h3 style="background-color: var(--med);">Stock (Stock)</h3>
+                    <h3 style="background-color: var(--med);" id="medicloadouts">Stock (Stock)</h3>
                     <p class="bold">CROSSBOW + MEDIGUN + ANY WHITELISTED MELEE</p>
                     <br>Only seen when buffing teammates (or in Oceania)
                 </li>
