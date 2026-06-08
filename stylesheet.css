@@ -78,8 +78,7 @@
 }
 
 * {
-  font-family: "Courier New", Courier, monospace;
-  font-size: large;
+  font-family: "Poppins", sans-serif;
   color: var(--text);
   text-shadow: var(--txtshadow);
 }
@@ -102,11 +101,12 @@
 }
 
 h1 {
-  font-size: xx-large;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: x-large;
+  font-size: 1.875rem;
+  font-family: "Bebas Neue", sans-serif;
   text-align: center;
 }
 
@@ -123,7 +123,7 @@ h2 {
   position: fixed;
   left: 2.5vw;
 
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 #myBtn {
@@ -169,7 +169,7 @@ div {
   border-radius: 10px;
   border-width: 5px;
   border-color: var(--divbc);
-  border-style: groove;
+  border-style: none;
 
   margin-top: 10px;
 
@@ -195,8 +195,14 @@ body {
   width: 50%;
   margin: auto;
   padding: 2.5%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-style: groove;
   border-radius: 10px;
   padding-bottom: 0px;
+}
+
+#mainstuff div {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 header {
@@ -244,9 +250,12 @@ button {
   border-color: rgb(221, 236, 196);
   border-style: inset;
 
-  font-family: "Montserrat", sans-serif;
+  font-family: inherit;
+  font-size: 1.25rem;
   font-weight: bold;
   transition: all ease-in-out 0.3s;
+
+  overflow: hidden;
 }
 
 button:hover {
@@ -343,12 +352,15 @@ iframe {
 
 a {
   color: var(--anchorcolor);
+  font-family: inherit;
 }
 .italic {
   font-style: italic;
+  font-size: 1rem;
 }
 .bold {
   font-weight: bold;
+  font-size: 1rem;
 }
 .calloutImg {
   height: 100%;
@@ -442,9 +454,13 @@ footer {
   margin-right: 10px;
 }
 p {
+  font-size: 1rem;
   text-align: justify;
 }
-html,
+
+html {
+  font-size: 16px;
+}
 
 .loading {
   color: var(--text);
@@ -528,7 +544,6 @@ html {
   padding: 0;
   background: transparent;
   border: none;
-  box-shadow: none;
 }
 
 .classimg {
@@ -536,6 +551,7 @@ html {
   max-width: 100%;
   height: auto;
   display: block;
+  box-shadow: none;
 }
 
 .classDescription {
@@ -583,3 +599,4 @@ html {
   display: block;
   margin: auto;
 }
+

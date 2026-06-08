@@ -1,17 +1,16 @@
 h1 {
     font-size: xx-large;
     font-family: "Bebas Neue", sans-serif;
-    cursor: default;
 }
 
 p{
     text-align: justify;
     font-family: "Poppins", sans-serif;
-    cursor: default;
 }
 
 .lift {
     transition: transform .5s cubic-bezier(0.25, 1.2, 0.5, 1), box-shadow 0.22s ease;
+    cursor: pointer;
 }
 
 .lift:hover {
@@ -30,4 +29,3 @@ video:hover {
     transform: scale(1);
     cursor: default;
 }
-
