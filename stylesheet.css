@@ -221,6 +221,8 @@ header {
 .ptlogo {
   height: 30%;
   width: 30%;
+  margin-left: 3%;
+  margin-right: 3%;
 }
 
 #theButton {
@@ -415,22 +417,13 @@ a {
   margin-bottom: 50px;
 }
 
-@keyframes spinAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+
+.spin {
+  transition: all ease-in-out 0.5s;
 }
 
-.throbber {
-  animation-name: spinAnimation;
-  animation-duration: 1s;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
-  animation-fill-mode: both;
+.spin:hover {
+  transform: rotate(15deg) scale(1.05);
 }
 
 footer {
