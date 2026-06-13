@@ -44,37 +44,39 @@ window.addEventListener("load", function() {
 const videos = document.querySelectorAll("video")
 
 videos.forEach(video => {
-  video.addEventListener("mouseover", function () {
-    this.play()
-  })
+  if(video.parentElement.localName !== 'script-ignore'){ //so the video in the landing page gets ignored by this
+    video.addEventListener("mouseover", function () {
+      this.play()
+    })
   
-  video.addEventListener("mouseout", function () {
-    this.pause()
-    this.currentTime = 0;
-  })
+    video.addEventListener("mouseout", function () {
+      this.pause()
+      this.currentTime = 0;
+    })
   
-  video.addEventListener("touchstart", function () {
-    this.play()
-  })
+    video.addEventListener("touchstart", function () {
+      this.play()
+    })
   
-  video.addEventListener("touchend", function () {
-    this.pause()
-    this.currentTime = 0;
-  })
+    video.addEventListener("touchend", function () {
+      this.pause()
+      this.currentTime = 0;
+    })
 
-  video.addEventListener("click", function () {
-    if (document.fullscreenElement) {
-      document.exitFullscreen();
-    } else if (this.requestFullscreen) {
-      this.requestFullscreen().catch(err => {
-        console.error(`Fullscreen error: ${err.message}`);
-      });
-    } else if (this.webkitRequestFullscreen) { /* Safari */
-      this.webkitRequestFullscreen();
-    } else if (this.msRequestFullscreen) { /* IE11 */
-      this.msRequestFullscreen();
-    }
-  })
+    video.addEventListener("click", function () {
+      if (document.fullscreenElement) {
+        document.exitFullscreen();
+      } else if (this.requestFullscreen) {
+        this.requestFullscreen().catch(err => {
+          console.error(`Fullscreen error: ${err.message}`);
+        });
+      } else if (this.webkitRequestFullscreen) { /* Safari */
+        this.webkitRequestFullscreen();
+      } else if (this.msRequestFullscreen) { /* IE11 */
+        this.msRequestFullscreen();
+      }
+    })
+  }
 })
 
 // scroll to top
