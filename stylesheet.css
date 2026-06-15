@@ -124,6 +124,8 @@ h2 {
   left: 2.5vw;
 
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-width: 5px;
+  border-style: groove;
 }
 
 #myBtn {

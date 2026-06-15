@@ -43,9 +43,15 @@
             </li>
             <li>
                 <a href="#callouts">Call Outs</a>
+                <ul>
+                    <li><a href=#goalside>Goal Side</a></li>
+                    <li><a href=#shelfside>Shelf Side</a></li>
+                    <li><a href=#mid>Middle</a></li>
+                    <li><a href=#space>High/Space</a></li>
+                </ul>
             </li>
             <li>
-                Game Guide
+                <a href="#gameguide">Game Guide</a>
                 <ul>
                     <li><a href="#setup">Set-Up</a></li>
                     <li><a href="#offense">Offense</a></li>
@@ -57,6 +63,13 @@
             </li>
             <li>
                 <a href="#rollouts">Rollouts</a>
+            </li>
+            <li>
+                <a href="#asiamedic">ASIA Medic</a>
+                <ul>
+                    <li><a href="#vshclimb">VSH Climb</a></li>
+                    <li><a href="#barnacle">Barnacle Medic (QuickFix)</a></li>
+                </ul>
             </li>
         </ol>
     </div>
@@ -77,7 +90,7 @@
             <img src="images/logo/APTA_LOGO_light.webp" class="ptlogo spin" id="apta">
             <img src="images/logo/OCE_LOGO.webp" class="ptlogo spin">
             <h1>P4SS Time Guide</h1>
-            <h2>Last Updated 6/3/26</h2>
+            <h2>Last Updated 6/13/26</h2>
         </header>
         
         <a href="dictionary.html" id="theButton"><button>P4SS Time Dictionary</button></a>
@@ -102,7 +115,7 @@
             </p>
 
 
-            <h3>Goal side</h3>
+            <h3 id="goalside">Goal Side</h3>
             <img src="images/callOuts/GOAL SIDE.webp" class="calloutImg">
 
             
@@ -124,7 +137,7 @@
                 for spamming on defenders or for spamming offensive players on the ground. Some maps have two fences while some only have one or none.
             </ul>
 
-            <h3>Left & Right side</h3>
+            <h3 id="shelfside">Shelf Side</h3>
             <img src="images/callOuts/SIDE SIDE.webp" class="calloutImg">
 
             <ul>
@@ -139,7 +152,7 @@
                 <br><img title="pass_stonework" src="images/miniExamples/stoneworks_high_ramp.webp" class="miniExample">
             </ul>
 
-            <h3>Middle</h3>
+            <h3 id="mid">Middle</h3>
             <img src="images/callOuts/MID SIDE.webp" class="calloutImg">
         
             <ul>
@@ -159,7 +172,7 @@
                 Sometimes has a surfable ramp. Really easy to get spammed from shelf, so you might die if the enemy is paying attention.
             </ul>
 
-            <h3>High/Space</h3>
+            <h3 id="space">High/Space</h3>
             <img src="images/callOuts/HIGH SIDE.webp" class="calloutImg">
 
             <ul>
@@ -177,8 +190,12 @@
 
         </div>
         <div>
-            <h2 id="setup">SET-UP (GETTING EARLY BALL POSSESSION)</h2>
-            <p>When the round starts, everyone should get overhealed/buffed. Ideally the <hi class="bold">Demo</hi> should switch to medic if there are none,
+            <h2 id="gameguide">GAME GUIDE</h2>
+            <p>A written guide on the regular strategies for each game state: <hi class="bold">Set-up</hi>, <hi class="bold">Offense</hi>, and <hi class="bold">Defense</hi>.</p>
+
+            <h3 id="setup">Set-up</h3>
+            <p>Set-up is the 10 seconds of time before the ball spawns every round.</p>
+            <p>When the round starts, everyone should get overhealed/buffed before everyone is allowed to move. Ideally the <hi class="bold">Demo</hi> should switch to medic if there are none,
                  but it's not a big deal if a <hi class="bold">Soldier</hi> switches instead.
                 <video width="320" height="240" loop muted class="tiny">
                     <source src="videos/examples/buff.webm" type="video/webm">
@@ -201,11 +218,11 @@
                 and/or spamming projectiles at whoever is contesting on lower mid can scare them off usually.<br>For <hi class="bold">Stoic</hi>, 
                 waiting for them to pick up the ball first and using a melee extender to <hi class="italic">steal</hi> the ball is a very common strategy.
             </p>
-            <h2 id="offense">OFFENSE</h2>
+            <h3 id="offense">OFFENSE</h3>
             <p>
                 After you gain ball possession after a defense or set-up, its best to pass to a teammate on your goal side to prepare for an offense. 
                 
-                <br><br>A standard push starts with either a <hi class="bold">Soldier</hi> or a <hi class="bold">Demo</hi> rolling out on upper left/right, depending 
+                <br><br>Offense can start anytime, but an offensive push after Set-up starts with either a <hi class="bold">Soldier</hi> or a <hi class="bold">Demo</hi> rolling out on upper left/right, depending 
                 on whichever is free from enemy players.
                 <video width="320" height="240" loop muted class="tiny">
                     <source src="videos/rollout/upper_rollout_right.webm" type="video/webm">
@@ -215,7 +232,7 @@
                 bring them closer to scoring as the ball follows behind.
                 </p>
                 
-                <p>Rolling out together makes passes messy and leaves 
+                <p>Rolling out together makes passes predictable and leaves 
                 your goal defenseless in the case they get the ball and push immediately, so its best to rollout one by one.
                 </p>
 
@@ -238,8 +255,8 @@
                 <h3>Self Bombs</h3>
 
                 <p>Self bombs are a series of jumps/trimps and tricks performed one after the other to bring the player and 
-                ball towards the enemy goal for a score. Self bombs can also be used to initiate an offense without scoring in mind 
-                if you dont have space to lock on to someone rolling out.
+                ball towards the enemy goal for a score. Self bombs can also be used to initiate an offense if you need to get the ball away from 
+                your goal but are waiting for teammates to respawn.
                 </p>
 
                 <p class="italic">Note: Hover video for more info on this specific self bomb</p>
@@ -263,9 +280,9 @@
                 <p>For more about self bombs and regular bombs, check out the <a href="guide.html#bombs">Bombs and Self Bombs</a> section of the guide.
                 </p>
             </p>
-            <h2 id="defense">DEFENSE </h2>
+            <h3 id="defense">DEFENSE </h3>
             <!--defense philosophy from moose's defense guide-->
-            <p>This is Moose's Defense Guide, made by Moose (duh). This'll give you the basics of defense philosophy in 4v4 PASS Time.</p>
+            <p>This is Moose's Defense Guide. This'll give you the basics of defense philosophy in 4v4 PASS Time.</p>
             <embed src="misc/Moose’s P4SS Time Defense Guide.pdf" class="pdf" id="dfnsguide">
             <a class="download" href="misc/Moose’s P4SS Time Defense Guide.pdf" download>Download Moose's P4SS Time Defense Guide</a>
             <p>Though theres a few more important notes to keep in mind :</p>
@@ -365,7 +382,7 @@
                 Rollouts are not required, but they can be very useful for getting to mid faster and contesting the ball spawns.
             </p>
             <p class="italic">
-                Note: The Barnacle/Medic rollout are Asia-specific due to the quickfix and vsh-climb being exclusive to that region
+                Note: The Barnacle/Medic rollout is Asia-specific due to the quickfix and vsh-climb being exclusive to that region
             </p>
             <ul>
                 <li>
@@ -414,12 +431,42 @@
                     </video>
                 </li>
                 <li>
-                    <p class="bold">Barnacle Rollout</p> - Using the quickfix on one of your soldiers that are rolling out to roll out with them.
+                    <p class="bold">Barnacle Rollout</p> - Using the quickfix on one of your soldiers that are rolling out to roll out with them and 
+                    then using the VSH climb to carry your momentum.
                     <video width="320" height="240" loop muted>
                         <source src="videos/rollout/barnacle_rollout.webm" type="video/webm">
                     </video>
                 </li>
             </ul>
+        </div>
+        <div id="asiamedic">
+            <h2>ASIA MEDIC</h2>
+
+            <h3 id="vshclimb">VSH Climb</h3>
+            <p>
+                On the <hi class="bold">Asia PASS Time Association</hi>'s dedicated server, Medic is able to use the same melee climb from the 
+                <hi class="bold">Versus Saxton Hale</hi> gamemode from base TF2.
+            </p>
+            <p>
+                There are a few differences between the P4SS Time VSH climb and the regular VSH climb.
+                <ul>
+                    <li>P4SS Time VSH Climb costs health, which means you can only climb a certain amount of times until you don't have enough</li>
+                    <li>P4SS Time VSH Climb isn't relative to the melee swing animation. It takes effect as soon as you press m1</li>
+                    <li>ill add more later</li>
+                </ul>
+            </p>
+
+            <h3 id="barnacle">Barnacle Medic (QuickFix)</h3>
+            <p>
+                <hi class="bold">APTA</hi> has also unbanned the QuickFix, balancing it by nerfing its overheal and removing its ubercharge. Even 
+                though ubercharge is very rarely used, the QuickFix uber is broken in P4SS Time because the patient can still pick up the ball unlike 
+                stock uber. It's overheal was nerfed by increasing it's decay, meaning it goes away faster.
+            </p>
+            <p>
+                When you use the QuickFix, your playstyle as medic switches from an overhealing demon to even more of a rat than regular medic. This 
+                is called the <a href="dictionary.html#barnacle">Barnacle</a>. You might see some other names thrown around (Larry & Chariot) which 
+                were alternative names that were given when the QuickFix was being tested.
+            </p>
         </div>
     </div>
 </body>
