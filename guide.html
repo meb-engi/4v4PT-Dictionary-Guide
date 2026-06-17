@@ -59,17 +59,27 @@
                 </ul>
             </li>
             <li>
+                <a href="#soldierguide">Soldier Guide</a>
+            </li>
+            <li>
+                <a href="#demoguide">Demo Guide</a>
+                <ul>
+                    <li><a href="#pipesguide">Pipes Guide</a></li>
+                    <li><a href="#stoicguide">Stoic Guide</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#asiamedic">Medic Guide</a>
+                <ul>
+                    <li><a href="#vshclimb">VSH Climb</a></li>
+                    <li><a href="#barnacle">Larry (QuickFix Medic)</a></li>
+                </ul>
+            </li>
+            <li>
                 <a href="#selfbombs">Bombs & Self Bombs</a>
             </li>
             <li>
                 <a href="#rollouts">Rollouts</a>
-            </li>
-            <li>
-                <a href="#asiamedic">ASIA Medic</a>
-                <ul>
-                    <li><a href="#vshclimb">VSH Climb</a></li>
-                    <li><a href="#barnacle">Barnacle Medic (QuickFix)</a></li>
-                </ul>
             </li>
         </ol>
     </div>
@@ -90,7 +100,7 @@
             <img src="images/logo/APTA_LOGO_light.webp" class="ptlogo spin" id="apta">
             <img src="images/logo/OCE_LOGO.webp" class="ptlogo spin">
             <h1>P4SS Time Guide</h1>
-            <h2>Last Updated 6/13/26</h2>
+            <h2>Last Updated 6/17/26</h2>
         </header>
         
         <a href="dictionary.html" id="theButton"><button>P4SS Time Dictionary</button></a>
@@ -195,15 +205,15 @@
 
             <h3 id="setup">Set-up</h3>
             <p>Set-up is the 10 seconds of time before the ball spawns every round.</p>
-            <p>When the round starts, everyone should get overhealed/buffed before everyone is allowed to move. Ideally the <hi class="bold">Demo</hi> should switch to medic if there are none,
-                 but it's not a big deal if a <hi class="bold">Soldier</hi> switches instead.
+            <p>When the round starts, everyone should get overhealed/buffed before everyone is allowed to move. Ideally a <hi class="bold">Soldier</hi> should switch to medic 
+                to give the <hi class="bold">Demo</hi> overheal for the lower fight, but it's not a big deal if a <hi class="bold">Demo</hi> switches instead.
                 <video width="320" height="240" loop muted class="tiny">
                     <source src="videos/examples/buff.webm" type="video/webm">
                 </video>
 
                 <br><br>When everyone rolls out to mid to contest for the ball, the main goal is to make space so the opposite team doesn't get the ball before 
                 your team does. Avoid dying, because this gives the enemy team a numbers advantage. If you're low on health, try sacrificing your life for 
-                an opponents.
+                an opponents life.
 
                 <video width="320" height="240" loop muted class="tiny">
                     <source src="videos/rollout/upper_rollout_solly.webm" type="video/webm">
@@ -214,9 +224,8 @@
 
                 <br><br>For <hi class="bold">Soldiers</hi> on upper mid, you'll mostly be fighting other soldiers. Try to scare them off upper mid or kill them.
 
-                <br><br>For demos on lower mid, your strategy will vary depending on your loadout.<br>For <hi class="bold">Pipes</hi>, dealing damage 
-                and/or spamming projectiles at whoever is contesting on lower mid can scare them off usually.<br>For <hi class="bold">Stoic</hi>, 
-                waiting for them to pick up the ball first and using a melee extender to <hi class="italic">steal</hi> the ball is a very common strategy.
+                <br><br>For <hi class="bold">demos</hi> on lower mid, you'll usually want to match whatever the other demo is doing. If they have their caber out, 
+                they're likely going for a <hi class="bold">Caber Extender</hi> to steal the ball. This is referred to as a <hi class="italic">ditto</hi>.
             </p>
             <h3 id="offense">OFFENSE</h3>
             <p>
@@ -251,34 +260,6 @@
                 <p>You force them to either focus you to survive but ignore the goal for a few seconds, or let you 
                 deal a ton of free damage to them while they spend their own health rocket jumping to block the goal.
                 </p>
-
-                <h3>Self Bombs</h3>
-
-                <p>Self bombs are a series of jumps/trimps and tricks performed one after the other to bring the player and 
-                ball towards the enemy goal for a score. Self bombs can also be used to initiate an offense if you need to get the ball away from 
-                your goal but are waiting for teammates to respawn.
-                </p>
-
-                <p class="italic">Note: Hover video for more info on this specific self bomb</p>
-                <video width="320" height="240" loop muted class="tiny" title="Lob ball on lower -> Pogo -> Ramp slide -> Wall extender">
-                    <source src="videos/examples/self_bomb.webm" type="video/webm">
-                </video>
-
-                <p>A lot of self bombs start with a <a href="dictionary.html#lob">lob</a> or a 
-                <a href="dictionary.html#dribble">dribble</a>. After that self bombs are usually free-styled, due to how situational they are.
-                </p>
-
-                <p>Self bombs can be grouped into categories depending on a characteristic of it like the method of scoring. 
-                <a href="guide.html#waterbomb">Water bombs</a> for example, start off with a dribble in water, which is only available on some 4v4 maps. 
-                It's defining characteristic is how high or fast the soldier goes after the initial water jump.
-                </p>
-
-                <p><a href="guide.html#deathbombs">Death Bombs</a> aren't a self bomb in the normal sense because you need to be locked on for the ball 
-                to stay team colored, but these are very common after a pass from a teammate who has completed their own self bomb but aren't able to score.
-                </p> 
-
-                <p>For more about self bombs and regular bombs, check out the <a href="guide.html#bombs">Bombs and Self Bombs</a> section of the guide.
-                </p>
             </p>
             <h3 id="defense">DEFENSE </h3>
             <!--defense philosophy from moose's defense guide-->
@@ -297,7 +278,113 @@
                 <li>If there are no more players waiting for passes then it's okay to stack multiple players on inside.</li>
             </ul>
         </div>
-        <div id="selfbombs">
+        <div id="soldierguide">
+            <h2>SOLDIER GUIDE</h2>
+            
+            <h3>Self Bombs</h3>
+
+                <p>Self bombs are a series of jumps/trimps and tricks performed one after the other to bring the player and 
+                ball towards the enemy goal for a score. Self bombs can also be used to initiate an offense if you need to get the ball away from 
+                your goal but are waiting for teammates to respawn.
+                </p>
+
+                <p>
+                    Self bombs can vary a lot in difficulty. The self bomb below this paragraph is on the easier side, with it just being a wall dribble 
+                    and 2 pencil dribbles in a row.
+                    <video width="320" height="240" loop muted class="tiny">
+                        <source src="videos/examples/bomb_selfbomb_easy.webm" type="video/webm">
+                    </video>
+                    That self bomb isn't hard to do, which also means it isn't hard to deny. You can make self bombs harder to deny by going faster or by 
+                    adding extenders.
+                    <video width="320" height="240" loop muted class="tiny">
+                        <source src="videos/examples/bomb_selfbomb_hard.webm" type="video/webm">
+                    </video>
+                </p>
+
+                <p>A lot of self bombs start with a <a href="dictionary.html#lob">lob</a> or a 
+                <a href="dictionary.html#dribble">dribble</a>. After that self bombs are usually free-styled, due to how situational they are.
+                </p>
+
+                <p>Self bombs can be grouped into categories depending on a characteristic of it like the method of scoring. 
+                <a href="guide.html#waterbomb">Water bombs</a> for example, start off with a dribble in water, which is only available on some 4v4 maps. 
+                It's defining characteristic is how high or fast the soldier goes after the initial water jump.
+                </p>
+
+                <p><a href="guide.html#deathbombs">Death Bombs</a> aren't a self bomb in the normal sense because you need to be locked on for the ball 
+                to stay team colored, but these are very common after a pass from a teammate who has completed their own self bomb but aren't able to score.
+                </p> 
+
+                <p>For more self bombs, check out <a href="https://www.youtube.com/watch?v=hYsapfqbldA" target="_blank">Owen's Everything Bomb Catalog</a>.
+                </p>
+        </div>
+        <div id="demoguide">
+            <h2>DEMOMAN GUIDE</h2>
+            <h3 id="pipesguide">Pipes Guide</h3>
+            <h3 id="stoicguide">Stoic Guide</h3>
+        </div>
+        <div id="asiamedic">
+            <h2>ASIA MEDIC</h2>
+
+            <h3 id="vshclimb">VSH Climb</h3>
+            <p>
+                On the <hi class="bold">Asia PASS Time Association</hi>'s dedicated server, Medic is able to use the same melee climb from the 
+                <hi class="bold">Versus Saxton Hale</hi> gamemode from base TF2. For the rest of this guide, the P4SS Time VSH Climb will be referred to 
+                as the Medic Climb to distinguish it from the regular TF2 VSH Climb
+            </p>
+            <p>
+                You can medic climb on any surface, meaning you can climb on the ground. This means you can replicate a lot of the moves 
+                <hi class="bold">Soldier</hi> and <hi class="bold">Demo</hi> with the Medic Climb, like the rebound dribble and the pencil dribble
+                <video width="320" height="240" loop muted class="tiny">
+                    <source src="videos/examples/dribble_rebound_medic.webm" type="video/webm">
+                </video>
+                <video width="320" height="240" loop muted class="tiny">
+                    <source src="videos/examples/dribble_pencil_medic.webm" type="video/webm">
+                </video>
+                <br>The ground medic climb is really useful since you don't need to be near a wall to gain height. The amount of height you gain is affected 
+                by whether or not you're crouching, just like the explosive jumps of <hi class="bold">Soldier</hi> and <hi class="bold">Demo</hi>
+                <video width="320" height="240" loop muted class="tiny">
+                    <source src="videos/examples/medic_climb.webm" type="video/webm">
+                </video>
+                <video width="320" height="240" loop muted class="tiny">
+                    <source src="videos/examples/medic_climb_crouch.webm" type="video/webm">
+                </video>
+                If you crouch jump right before medic climbing, you can go even higher. This is possible because of the longer range of the medic climb, 
+                so there is a period of time after you crouch jump where you're still able to hit the ground
+                <video width="320" height="240" loop muted class="tiny">
+                    <source src="videos/examples/medic_climb_crouchjump.webm" type="video/webm">
+                </video>
+                <br>You're able to chain up to 5 medic climbs in a row, each costing 25 health, but they effectively cost lesser because of self heal. The height 
+                you gain is enough to give fall damage though, so be weary of that. (in the clip, I regain my health when I take fall damage because of a server plugin, 
+                this wont happen in a real game)
+                <video width="320" height="240" loop muted class="tiny">
+                    <source src="videos/examples/medic_climb_chain.webm" type="video/webm">
+                </video>
+                If your health is below that 25 hp threshold, the plugin wont let you medic climb.
+            </p>
+
+            <h3 id="barnacle">Larry (QuickFix Medic)</h3>
+            <p>
+                <hi class="bold">APTA</hi> has also unbanned the QuickFix, balancing it by nerfing its overheal and removing its ubercharge. Even 
+                though ubercharge is very rarely used, the QuickFix uber is broken in P4SS Time because the patient can still pick up the ball unlike 
+                stock uber. It's overheal was nerfed by increasing it's decay, meaning it goes away faster.
+            </p>
+            <p>
+                When you use the QuickFix, your playstyle as medic switches from an overhealing demon to even more of a rat than regular medic. This 
+                is called the <a href="dictionary.html#barnacle">Larry</a> loadout. You might see some other names thrown around (Barnacle & Chariot) which 
+                were alternative names that were given when the QuickFix was being tested.
+                <span style="display: flex; justify-content: center;" title="barnacle was such a good name tho wtf">
+                    <img src="images/miniExamples/barnaclepoll.webp" class="tiny">
+                </span>
+            </p>
+            <p>
+                The QuickFix and VSH Climb can be used to gain a ton of momentum.
+                <video width="320" height="240" loop muted class="tiny">
+                    <source src="videos/rollout/barnacle_rollout.webm" type="video/webm">
+                </video>
+                This can be used to quickly roll out with your team.
+            </p>
+        </div>
+        <!--<div id="selfbombs"> idk if ill include this
             <h2 id="bombs">BOMBS & SELF BOMBS</h2>
             <p>This section will highlight very common (named) Bombs & Types of Self Bombs</p>
             <p class="italic">Note: You don't have to call these out before doing them, its just useful to be able to distinguish them</p>
@@ -373,7 +460,7 @@
                 </li>
             </ul>
             For more self bombs, check out <a href="https://www.youtube.com/watch?v=hYsapfqbldA" target="_blank">Owen's Everything Bomb Catalog</a>.
-        </div>
+        </div>-->
         <!--note: add section for rollouts-->
         <div id="rollouts">
             <h2>ROLL OUTS</h2>
@@ -382,7 +469,7 @@
                 Rollouts are not required, but they can be very useful for getting to mid faster and contesting the ball spawns.
             </p>
             <p class="italic">
-                Note: The Barnacle/Medic rollout is Asia-specific due to the quickfix and vsh-climb being exclusive to that region
+                Note: The Larry/QuickFix Medic rollout is Asia-specific due to the quickfix and vsh-climb being exclusive to that region
             </p>
             <ul>
                 <li>
@@ -431,42 +518,13 @@
                     </video>
                 </li>
                 <li>
-                    <p class="bold">Barnacle Rollout</p> - Using the quickfix on one of your soldiers that are rolling out to roll out with them and 
-                    then using the VSH climb to carry your momentum.
+                    <p class="bold">Larry Rollout</p> - Using the quickfix on one of your soldiers that are rolling out to roll out with them and 
+                    then using the VSH climb to carry your momentum. This rollout is exclusive to the <a href="#asiamedic">Larry</a> loadout.
                     <video width="320" height="240" loop muted>
                         <source src="videos/rollout/barnacle_rollout.webm" type="video/webm">
                     </video>
                 </li>
             </ul>
-        </div>
-        <div id="asiamedic">
-            <h2>ASIA MEDIC</h2>
-
-            <h3 id="vshclimb">VSH Climb</h3>
-            <p>
-                On the <hi class="bold">Asia PASS Time Association</hi>'s dedicated server, Medic is able to use the same melee climb from the 
-                <hi class="bold">Versus Saxton Hale</hi> gamemode from base TF2.
-            </p>
-            <p>
-                There are a few differences between the P4SS Time VSH climb and the regular VSH climb.
-                <ul>
-                    <li>P4SS Time VSH Climb costs health, which means you can only climb a certain amount of times until you don't have enough</li>
-                    <li>P4SS Time VSH Climb isn't relative to the melee swing animation. It takes effect as soon as you press m1</li>
-                    <li>ill add more later</li>
-                </ul>
-            </p>
-
-            <h3 id="barnacle">Barnacle Medic (QuickFix)</h3>
-            <p>
-                <hi class="bold">APTA</hi> has also unbanned the QuickFix, balancing it by nerfing its overheal and removing its ubercharge. Even 
-                though ubercharge is very rarely used, the QuickFix uber is broken in P4SS Time because the patient can still pick up the ball unlike 
-                stock uber. It's overheal was nerfed by increasing it's decay, meaning it goes away faster.
-            </p>
-            <p>
-                When you use the QuickFix, your playstyle as medic switches from an overhealing demon to even more of a rat than regular medic. This 
-                is called the <a href="dictionary.html#barnacle">Barnacle</a>. You might see some other names thrown around (Larry & Chariot) which 
-                were alternative names that were given when the QuickFix was being tested.
-            </p>
         </div>
     </div>
 </body>
