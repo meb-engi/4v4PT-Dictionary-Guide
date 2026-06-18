@@ -51,7 +51,7 @@
                 </ul>
             </li>
             <li>
-                <a href="#gameguide">Game Guide</a>
+                <a href="#gameguide">Basic Game Guide</a>
                 <ul>
                     <li><a href="#setup">Set-Up</a></li>
                     <li><a href="#offense">Offense</a></li>
@@ -60,6 +60,13 @@
             </li>
             <li>
                 <a href="#soldierguide">Soldier Guide</a>
+                <ul>
+                    <li><a href="#soldieroffense">Offense</a></li>
+                    <li><a href="#soldierdefense">Defense</a></li>
+                    <li><a href="#soldiergamestate">Assessing the Game State</a></li>
+                    <li><a href="#soldierpositioning">Positioning</a></li>
+                    <li><a href="#soldiertips">General Tips</a></li>
+                </ul>
             </li>
             <li>
                 <a href="#demoguide">Demo Guide</a>
@@ -74,9 +81,6 @@
                     <li><a href="#vshclimb">VSH Climb</a></li>
                     <li><a href="#barnacle">Larry (QuickFix Medic)</a></li>
                 </ul>
-            </li>
-            <li>
-                <a href="#selfbombs">Bombs & Self Bombs</a>
             </li>
             <li>
                 <a href="#rollouts">Rollouts</a>
@@ -97,8 +101,10 @@
                 <img src="images/dark_mode.svg" id="darkicon">
                 <img src="images/light_mode.svg" id="lighticon">
             </button>
-            <img src="images/logo/APTA_LOGO_light.webp" class="ptlogo spin" id="apta">
-            <img src="images/logo/OCE_LOGO.webp" class="ptlogo spin">
+            <span style="display: flex; justify-content: center;">
+                <img src="images/logo/APTA_LOGO_light.webp" class="ptlogo spin" id="apta">
+                <img src="images/logo/OCE_LOGO.webp" class="ptlogo spin">
+            </span>
             <h1>P4SS Time Guide</h1>
             <h2>Last Updated 6/17/26</h2>
         </header>
@@ -200,15 +206,16 @@
 
         </div>
         <div>
-            <h2 id="gameguide">GAME GUIDE</h2>
-            <p>A written guide on the regular strategies for each game state: <hi class="bold">Set-up</hi>, <hi class="bold">Offense</hi>, and <hi class="bold">Defense</hi>.</p>
+            <h2 id="gameguide">BASIC GAME GUIDE</h2>
+            <p class="italic" style="text-align: center;">written by EngiKnight</p>
+            <p>A written guide on the regular strategies for each main game state: <hi class="bold">Set-up</hi>, <hi class="bold">Offense</hi>, and <hi class="bold">Defense</hi>.</p>
 
             <h3 id="setup">Set-up</h3>
             <p>Set-up is the 10 seconds of time before the ball spawns every round.</p>
-            <p>When the round starts, everyone should get overhealed/buffed before everyone is allowed to move. Ideally a <hi class="bold">Soldier</hi> should switch to medic 
-                to give the <hi class="bold">Demo</hi> overheal for the lower fight, but it's not a big deal if a <hi class="bold">Demo</hi> switches instead.
+            <p>When the round starts, everyone should get overhealed/buffed before everyone is allowed to move. Ideally a <hi class="bold">Soldier</hi> should switch to medic with 
+                the stock medigun to give the <hi class="bold">Demo</hi> overheal for the mid fights, but it's not a big deal if a <hi class="bold">Demo</hi> switches instead.
                 <video width="320" height="240" loop muted class="tiny">
-                    <source src="videos/examples/buff.webm" type="video/webm">
+                    <source src="videos/examples/buffs.webm" type="video/webm">
                 </video>
 
                 <br><br>When everyone rolls out to mid to contest for the ball, the main goal is to make space so the opposite team doesn't get the ball before 
@@ -224,8 +231,16 @@
 
                 <br><br>For <hi class="bold">Soldiers</hi> on upper mid, you'll mostly be fighting other soldiers. Try to scare them off upper mid or kill them.
 
-                <br><br>For <hi class="bold">demos</hi> on lower mid, you'll usually want to match whatever the other demo is doing. If they have their caber out, 
+                <br>For <hi class="bold">Demos</hi> on lower mid, you'll usually want to match whatever the other demo is doing. If they have their caber out, 
                 they're likely going for a <hi class="bold">Caber Extender</hi> to steal the ball. This is referred to as a <hi class="italic">ditto</hi>.
+                <video width="320" height="240" loop muted class="tiny">
+                    <source src="videos/examples/steal_caber_extender.webm" type="video/webm">
+                </video>
+
+                <br>For <hi class="bold">Medics</hi> on lower mid, let your opponent pick up the ball first and use your faster walk speed to catch up and steal 
+                it from them.
+
+                <br>If you have a Demo-Med team comp then your Medic should pocket the Demo
             </p>
             <h3 id="offense">OFFENSE</h3>
             <p>
@@ -280,50 +295,152 @@
         </div>
         <div id="soldierguide">
             <h2>SOLDIER GUIDE</h2>
-            
-            <h3>Self Bombs</h3>
+            <p class="italic" style="text-align: center;">written by Gibus Spy (gears4343)</p>
 
-                <p>Self bombs are a series of jumps/trimps and tricks performed one after the other to bring the player and 
-                ball towards the enemy goal for a score. Self bombs can also be used to initiate an offense if you need to get the ball away from 
-                your goal but are waiting for teammates to respawn.
+            <p>
+                Soldier is the workhorse of the team with the ability to quickly switch between offensive and defensive roles 
+                with his decent damage and high mobility (rocket jumping) allowing him to rapidly reposition across the map. 
+                Soldier is the only class capable of providing consistent defence to your team's goal during an attack, as such, 
+                if your team is lacking in defence it is your job to fill in that gap.
+            </p>
+
+            <h3 id="soldieroffense">Offense</h3>
+                <p>
+                    On offense soldier can perform various self bombs in order to move the ball from your hands into the enemy goal. 
+                    When bombing in with the ball, its important to take note of how many enemy defenders there are on their goal. 
+                    The more defenders, the less likely your bomb will be successful which can result in your team losing possession of the ball. 
+                    Defenders have many measures of preventing your bomb, including outright killing you during the bomb. 
+                    If you see an enemy moving in to prevent your bomb you should pass to a teammate to maintain ball control 
+                    and continue the offensive elsewhere or try to make distance while continuing your bomb.
                 </p>
 
                 <p>
-                    Self bombs can vary a lot in difficulty. The self bomb below this paragraph is on the easier side, with it just being a wall dribble 
-                    and 2 pencil dribbles in a row.
-                    <video width="320" height="240" loop muted class="tiny">
-                        <source src="videos/examples/bomb_selfbomb_easy.webm" type="video/webm">
-                    </video>
-                    That self bomb isn't hard to do, which also means it isn't hard to deny. You can make self bombs harder to deny by going faster or by 
-                    adding extenders.
-                    <video width="320" height="240" loop muted class="tiny">
-                        <source src="videos/examples/bomb_selfbomb_hard.webm" type="video/webm">
-                    </video>
+                    When starting an offensive its important to be in a good position to quickly carry out your bomb. Staying nearby to shelf or 
+                    floor in order to jump to the top ramps leaves you open to carry out an offensive and moves the ball around, making it harder 
+                    for your opponents to kill your ball carrier. Staying away from enemy soldiers and making sure you are open and ready to 
+                    perform a bomb with full rockets and enough health is the key to performing a successful bomb and not losing ball control. 
                 </p>
 
-                <p>A lot of self bombs start with a <a href="dictionary.html#lob">lob</a> or a 
-                <a href="dictionary.html#dribble">dribble</a>. After that self bombs are usually free-styled, due to how situational they are.
+            <h3 id="soldierdefense">Defense</h3>
+                <p>
+                    When the enemy has ball control its important to have sufficient defence, if you see that a friendly soldier is already helping to 
+                    defend your goal you can choose to take alternative decisions. These include, killing the person bombing in, killing those in offensive 
+                    positions to limit their options for passing, or going in for an intercept. However, if your goal lacks defence (1 or 2 soldiers) 
+                    you should jump back as fast as you can while maintaining at least 1 rocket to defend from the enemy bomb. 
                 </p>
 
-                <p>Self bombs can be grouped into categories depending on a characteristic of it like the method of scoring. 
-                <a href="guide.html#waterbomb">Water bombs</a> for example, start off with a dribble in water, which is only available on some 4v4 maps. 
-                It's defining characteristic is how high or fast the soldier goes after the initial water jump.
+                <p>
+                    Whenever the enemy has ball control and has players in offensive positions you should take defensive positions. This means staying 
+                    near to your side of the map to maintain the option of quickly jumping back if they begin an attack. However, if the enemy has ball 
+                    control but no players in offensive positions, such as if they died, then its possible to roll out and bomb into the enemy ball carrier 
+                    in order to fight for possession of the ball and make starting an attack harder. Its important to always have 1 player near or at 
+                    the goal in order to defend if the enemy team does start a bomb. Going in for the ball when the enemy has it is referred as "chasing" 
+                    and shoud be commed to your team.
+                </p>
+            
+            <h3 id="soldiergamestate">Assessing the Game State</h3>
+                <p>
+                    Assessing the game state is the best method for determining whether to go on the defensive or offensive before committing too much into either category. 
+                    The bar on the bottom of your screen allows you to monitor the map wide status of the game, such as who has the ball and where it is. 
+                    Looking at the top of your screen will allow you to see how many enemies or teammates are still alive or have spawned. When in a defence team 
+                    fight for ball possession (such as the ball being thrown in corner and the enemy team chasing) you should always jump back to assist in killing 
+                    the enemy team in order to maintain ball control. For example, if your on mid and your ball carrier is getting jumped, jump back to help in the defence.
                 </p>
 
-                <p><a href="guide.html#deathbombs">Death Bombs</a> aren't a self bomb in the normal sense because you need to be locked on for the ball 
-                to stay team colored, but these are very common after a pass from a teammate who has completed their own self bomb but aren't able to score.
-                </p> 
-
-                <p>For more self bombs, check out <a href="https://www.youtube.com/watch?v=hYsapfqbldA" target="_blank">Owen's Everything Bomb Catalog</a>.
+                <p>
+                    Examples of game states would be:
+                    <ul>
+                        <li>Having ball possession</li>
+                        <li>Having ball possession but no offensive positions to pass to</li>
+                        <li>Enemy having ball possession</li>
+                        <li>Enemy having ball possession but no offensive positions to pass to</li>
+                        <li>Defence team fight for ball possession</li>
+                        <li>Offensive team fight for ball possession</li>
+                    </ul>
                 </p>
+
+                <p>
+                    The game state can transition from offense to defence quickly so reading what your teammate's status (alive, dead, low, full) is important. 
+                    If the enemy has ball possession but no passes your team can chase and begin an offensive team fight for ball possession. 
+                    If all your teammates die during the team fight your goal will be left open for the spawning enemies to bomb in. As such, ensure your entire 
+                    team isn't chasing and ensure someone is on defence. If part of the chase, read your teammate's health and how close the enemy ball carrier 
+                    is to dying. If the fight is going to be unsuccessful its usually best to killbind to resupply and help the defence. Similarly, if the enemy 
+                    fails a offensive team fight for your ball it leaves multiple players dead, reducing their defensive ability and allowing your team an easier offensive. 
+                </p>
+
+            <h3 id="soldierpositioning">Positioning</h3>
+                <p>
+                    Positioning can be put into different labels, offensive positioning, defensive positioning and neutral positioning. 
+                    Neutral positioning includes things like staying on mid or middle shelf when the enemy team has the ball but has not begun an offensive. 
+                    This allows you to remain flexible before committing to any specific role and sets you up for going offensive (chasing the ball and fighting 
+                    the enemy team) or defensive (intercepting on top left/right or jumping back to goal).
+                </p>
+                <p>
+                    Neutral positioning should allow easy positioning to 
+                    jump back or health packs, also enabling soldiers to chase the ball if its loose to gain possession. Offensive positioning typically involves 
+                    roll outs or being forward. Roll outs come in many different ways, top roll outs (top left/right), low roll outs (low left/mid/right), 
+                    or high roll outs (sync roll outs). This lets you quickly bring the ball from your side to the enemy goal. "playing forward" usually refers 
+                    to being on the enemy side of the map, such as their floor. corner, of enemy side of shelf. On defence, forward players should be targeted and 
+                    killed while maintaining goal defence in order to prevent enemy passes from continuing the offensive. 
+                </p>
+
+            <h3 id="soldiertips">General Tips</h3>
+                <ul>
+                    <li>If you have the ball (either from chasing or getting loose ball) and no passes, you should start a self bomb. If a self bomb is not 
+                        possible or has failed, leaving you out of position on the enemy side without passes, you should throw the ball back to your side of 
+                        the map (throwing back) to try and maintain ball possession. Passing is the best way to continue an offensive, if your out of rockets 
+                        or health then pass to a teammate in a better position. 
+                    </li>
+                    <li>
+                        A <a href="dictionary.html#handoff">handoff</a> refers to throwing the ball for your teammate to catch without locking onto them. Handoffs vary but are all built around that 
+                        general purpose. Common handoffs include throwing to top left/right if your throw can reach there in order for a player rolling out to 
+                        catch it and bomb in. Handoffs make it harder for the enemy to intercept the ball when passing <del>and looks cool</del>.<br><br>
+                        <ul>
+                            <li>
+                                <a href="dictionary.html#handoff">Standard handoff</a>
+                                <p>Just throwing it for them to catch loose</p>
+                                <video width="320" height="240" loop muted class="tiny">
+                                    <source src="videos/examples/handoff.webm" type="video/webm">
+                                </video>
+                            </li>
+                            <li>
+                                <a href="dictionary.html#chinese">Chinese</a>
+                                <p>Kill binding with the ball, causing the ball to bounce above you</p>
+                                <video width="320" height="240" loop muted class="tiny">
+                                    <source src="videos/examples/handoff_chinese.webm" type="video/webm">
+                                </video>
+                            </li>
+                            <li>
+                                <a href="dictionary.html#japanese">Japanese</a>
+                                <p>kill binding with the ball following you for your teammate to catch</p>
+                                <video width="320" height="240" loop muted class="tiny">
+                                    <source src="videos/examples/handoff_japanese.webm" type="video/webm">
+                                </video>
+                            </li>
+                            <li>
+                                <a href="dictionary.html#korean">Korean</a>
+                                <p>Teammate catching the ball while its still magneted onto you</p>
+                                <video width="320" height="240" loop muted class="tiny">
+                                    <source src="videos/examples/handoff_korean.webm" type="video/webm">
+                                </video>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
         </div>
         <div id="demoguide">
             <h2>DEMOMAN GUIDE</h2>
+            <p class="italic" style="text-align: center;">written by Evilyn</p>
             <h3 id="pipesguide">Pipes Guide</h3>
             <h3 id="stoicguide">Stoic Guide</h3>
         </div>
         <div id="asiamedic">
-            <h2>ASIA MEDIC</h2>
+            <h2>MEDIC GUIDE</h2>
+            <p class="italic" style="text-align: center;">written by EngiKnight</p>
+
+            <p>
+                put stock medic guide
+            </p>
 
             <h3 id="vshclimb">VSH Climb</h3>
             <p>
