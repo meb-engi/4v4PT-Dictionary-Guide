@@ -11,3 +11,5 @@ poggersww
 We're hella unproffessional thou so like :joy: no need to be formal
 
 "They bawl when we ball - Einstein"
+
+i quit guys :) -poggersww
